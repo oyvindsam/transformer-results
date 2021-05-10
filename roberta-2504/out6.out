@@ -34708,3 +34708,3533 @@ Traceback (most recent call last):
   File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
     n = write(self._handle, buf)
 BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10441127419471741, 'test_f1': 0.8866498740554156, 'test_prec': 0.9214659685863874, 'test_recall': 0.8543689320388349, 'labeled_instances': 1000, 'orakle_instances': 600, 'train_positive_rate': 0.399, 'pool_positive_rate': 0.0457516339869281, 'iteration_time': 485.4082701206207}
+
+### Run 10, 1000 training samples. Pool: 4743. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4743 Time used:  26.567891359329224
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.958 0.001 0.001 0.    0.    0.001 0.001 0.    0.001 0.038]
+% predicted as match: 0.03984819734345351. 0,1: 4554 189
+High confidence 0:
+       index  matching    score0    score1
+2453   2453     False  0.999434  0.000566
+52       52     False  0.999432  0.000568
+1802   1802     False  0.999432  0.000568
+5616   5616     False  0.999432  0.000568
+198     198     False  0.999431  0.000569
+3947   3947     False  0.999431  0.000569
+2458   2458     False  0.999431  0.000569
+1593   1593     False  0.999431  0.000569
+1142   1142     False  0.999431  0.000569
+1471   1471     False  0.999431  0.000569
+1158   1158     False  0.999430  0.000570
+1753   1753     False  0.999430  0.000570
+2615   2615     False  0.999430  0.000570
+5230   5230     False  0.999430  0.000570
+974     974     False  0.999430  0.000570
+5576   5576     False  0.999430  0.000570
+3666   3666     False  0.999430  0.000570
+877     877     False  0.999430  0.000570
+3314   3314     False  0.999429  0.000571
+2570   2570     False  0.999429  0.000571
+High confidence 1:
+       index  matching    score0    score1
+5160   5160      True  0.001215  0.998785
+5252   5252      True  0.001235  0.998765
+2214   2214      True  0.001237  0.998763
+3527   3527      True  0.001240  0.998760
+2247   2247      True  0.001243  0.998757
+2960   2960      True  0.001247  0.998753
+1055   1055      True  0.001247  0.998753
+4374   4374      True  0.001256  0.998744
+1547   1547      True  0.001259  0.998741
+5155   5155      True  0.001262  0.998738
+1085   1085      True  0.001262  0.998738
+1806   1806      True  0.001264  0.998736
+4230   4230      True  0.001265  0.998735
+3575   3575      True  0.001268  0.998732
+1463   1463      True  0.001270  0.998730
+3245   3245      True  0.001271  0.998729
+2988   2988      True  0.001272  0.998728
+635     635      True  0.001272  0.998728
+2187   2187      True  0.001274  0.998726
+2620   2620      True  0.001274  0.998726
+Uncertain 0:
+       index  matching    score0    score1
+2657   2657     False  0.959402  0.040598
+764     764     False  0.955738  0.044262
+4318   4318     False  0.954869  0.045131
+433     433      True  0.951225  0.048775
+1663   1663      True  0.927743  0.072257
+3391   3391     False  0.921621  0.078379
+3272   3272      True  0.921111  0.078889
+5371   5371     False  0.919555  0.080445
+2934   2934     False  0.914643  0.085357
+5357   5357     False  0.914010  0.085990
+5617   5617     False  0.903981  0.096019
+3735   3735     False  0.898854  0.101146
+45       45     False  0.868169  0.131831
+5399   5399      True  0.825197  0.174803
+1048   1048     False  0.816922  0.183078
+2541   2541     False  0.804880  0.195120
+517     517      True  0.758160  0.241840
+5665   5665     False  0.730538  0.269462
+4340   4340      True  0.721507  0.278493
+3334   3334     False  0.639213  0.360787
+Uncertain 1:
+       index  matching    score0    score1
+2392   2392      True  0.008457  0.991543
+1097   1097     False  0.011444  0.988556
+4567   4567      True  0.014711  0.985289
+5384   5384      True  0.015512  0.984488
+1946   1946      True  0.015538  0.984462
+2107   2107     False  0.019869  0.980131
+4058   4058      True  0.020899  0.979101
+4885   4885     False  0.057593  0.942407
+5438   5438      True  0.060326  0.939674
+4392   4392      True  0.063965  0.936035
+1429   1429      True  0.135942  0.864058
+646     646      True  0.138150  0.861850
+459     459      True  0.176816  0.823184
+448     448     False  0.297921  0.702079
+625     625     False  0.321499  0.678501
+1671   1671      True  0.351272  0.648728
+4212   4212      True  0.360897  0.639103
+4368   4368     False  0.437758  0.562242
+489     489     False  0.487512  0.512488
+4327   4327      True  0.494512  0.505488
+Unconfident samples positive rate: 0.475
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.40555555555555556
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.11254498362541199, 'test_f1': 0.906801007556675, 'test_prec': 0.9424083769633508, 'test_recall': 0.8737864077669902, 'labeled_instances': 1080, 'orakle_instances': 640, 'train_positive_rate': 0.40555555555555556, 'pool_positive_rate': 0.038172850096504396, 'iteration_time': 525.5469586849213}
+
+### Run 11, 1080 training samples. Pool: 4663. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4663 Time used:  28.40510058403015
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.967 0.    0.001 0.    0.    0.    0.    0.    0.001 0.03 ]
+% predicted as match: 0.03131031524769462. 0,1: 4517 146
+High confidence 0:
+       index  matching    score0    score1
+758     758     False  0.999798  0.000202
+2909   2909     False  0.999797  0.000203
+2885   2885     False  0.999797  0.000203
+2013   2013     False  0.999797  0.000203
+4931   4931     False  0.999796  0.000204
+2380   2380     False  0.999795  0.000205
+750     750     False  0.999794  0.000206
+3563   3563     False  0.999794  0.000206
+1391   1391     False  0.999793  0.000207
+127     127     False  0.999793  0.000207
+5106   5106     False  0.999793  0.000207
+449     449     False  0.999793  0.000207
+779     779     False  0.999792  0.000208
+3641   3641     False  0.999792  0.000208
+2535   2535     False  0.999792  0.000208
+3928   3928     False  0.999792  0.000208
+3969   3969     False  0.999792  0.000209
+5065   5065     False  0.999791  0.000209
+5016   5016     False  0.999791  0.000209
+4484   4484     False  0.999791  0.000209
+High confidence 1:
+       index  matching    score0    score1
+5421   5421      True  0.000415  0.999585
+576     576      True  0.000426  0.999574
+2032   2032      True  0.000428  0.999572
+348     348      True  0.000428  0.999572
+2096   2096      True  0.000429  0.999571
+370     370      True  0.000431  0.999569
+2504   2504      True  0.000432  0.999568
+1430   1430      True  0.000433  0.999567
+863     863      True  0.000433  0.999567
+2801   2801      True  0.000441  0.999559
+4690   4690      True  0.000443  0.999557
+556     556      True  0.000445  0.999555
+1540   1540      True  0.000447  0.999553
+5208   5208      True  0.000448  0.999552
+5564   5564      True  0.000448  0.999552
+1007   1007      True  0.000449  0.999551
+1121   1121      True  0.000451  0.999549
+3644   3644      True  0.000452  0.999548
+2366   2366      True  0.000454  0.999546
+1688   1688      True  0.000455  0.999545
+Uncertain 0:
+       index  matching    score0    score1
+1789   1789     False  0.986097  0.013903
+4138   4138     False  0.982541  0.017459
+2438   2438     False  0.980422  0.019578
+4088   4088     False  0.977779  0.022221
+1939   1939     False  0.974311  0.025689
+5275   5275     False  0.967116  0.032884
+5560   5560      True  0.948276  0.051724
+1694   1694     False  0.945679  0.054321
+3084   3084     False  0.924061  0.075939
+2323   2323     False  0.920197  0.079803
+1639   1639     False  0.915939  0.084061
+3472   3472     False  0.915476  0.084524
+2216   2216     False  0.912871  0.087129
+5372   5372     False  0.849770  0.150230
+2822   2822     False  0.779717  0.220283
+4407   4407     False  0.759251  0.240749
+1161   1161     False  0.758441  0.241559
+5075   5075      True  0.714184  0.285816
+228     228     False  0.689694  0.310306
+392     392     False  0.640161  0.359839
+Uncertain 1:
+       index  matching    score0    score1
+1635   1635      True  0.001952  0.998048
+3706   3706     False  0.002410  0.997590
+893     893      True  0.002939  0.997061
+290     290      True  0.003479  0.996521
+470     470     False  0.003500  0.996500
+5174   5174      True  0.004602  0.995398
+2415   2415      True  0.005001  0.994999
+5054   5054      True  0.005254  0.994746
+673     673     False  0.005605  0.994395
+4569   4569      True  0.005628  0.994372
+1089   1089     False  0.008223  0.991777
+5427   5427      True  0.008504  0.991496
+665     665      True  0.009604  0.990396
+5145   5145      True  0.014228  0.985772
+2664   2664      True  0.015823  0.984177
+3796   3796      True  0.063502  0.936498
+3951   3951     False  0.116337  0.883663
+4333   4333      True  0.142868  0.857132
+2681   2681      True  0.179134  0.820866
+5011   5011     False  0.334024  0.665976
+Unconfident samples positive rate: 0.4
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4086206896551724
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.1013873964548111, 'test_f1': 0.8839506172839506, 'test_prec': 0.8994974874371859, 'test_recall': 0.8689320388349514, 'labeled_instances': 1160, 'orakle_instances': 680, 'train_positive_rate': 0.4086206896551724, 'pool_positive_rate': 0.030984071568841372, 'iteration_time': 510.6935648918152}
+
+### Run 12, 1160 training samples. Pool: 4583. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4583 Time used:  25.28983998298645
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.969 0.003 0.001 0.001 0.    0.    0.001 0.001 0.001 0.023]
+% predicted as match: 0.02640192013964652. 0,1: 4462 121
+High confidence 0:
+       index  matching    score0    score1
+4891   4891     False  0.999638  0.000362
+456     456     False  0.999638  0.000362
+3776   3776     False  0.999638  0.000362
+76       76     False  0.999637  0.000363
+689     689     False  0.999636  0.000364
+2064   2064     False  0.999636  0.000364
+1096   1096     False  0.999636  0.000364
+3517   3517     False  0.999634  0.000366
+606     606     False  0.999634  0.000366
+1133   1133     False  0.999633  0.000367
+2235   2235     False  0.999630  0.000370
+1545   1545     False  0.999630  0.000370
+3128   3128     False  0.999628  0.000372
+2068   2068     False  0.999628  0.000372
+729     729     False  0.999627  0.000373
+5731   5731     False  0.999627  0.000373
+1574   1574     False  0.999626  0.000374
+3342   3342     False  0.999626  0.000374
+2665   2665     False  0.999626  0.000374
+2169   2169     False  0.999626  0.000374
+High confidence 1:
+       index  matching    score0    score1
+1605   1605      True  0.003279  0.996721
+2998   2998      True  0.003284  0.996716
+5517   5517      True  0.003297  0.996703
+4692   4692      True  0.003333  0.996667
+3940   3940      True  0.003338  0.996662
+3246   3246      True  0.003348  0.996652
+244     244      True  0.003351  0.996649
+4768   4768      True  0.003366  0.996634
+965     965      True  0.003370  0.996630
+3835   3835      True  0.003374  0.996626
+2047   2047      True  0.003379  0.996621
+2764   2764      True  0.003381  0.996619
+2166   2166      True  0.003382  0.996618
+2372   2372      True  0.003386  0.996614
+3498   3498      True  0.003388  0.996612
+1567   1567      True  0.003392  0.996608
+3882   3882      True  0.003396  0.996604
+5572   5572      True  0.003410  0.996590
+430     430      True  0.003412  0.996588
+5443   5443      True  0.003416  0.996584
+Uncertain 0:
+       index  matching    score0    score1
+5198   5198     False  0.886589  0.113411
+3437   3437     False  0.884168  0.115832
+403     403     False  0.869884  0.130116
+4072   4072     False  0.869160  0.130840
+3326   3326     False  0.857678  0.142322
+4760   4760     False  0.854534  0.145466
+4853   4853     False  0.848405  0.151595
+3186   3186     False  0.832526  0.167474
+2904   2904     False  0.816534  0.183466
+5536   5536      True  0.780878  0.219122
+5678   5678     False  0.768392  0.231608
+604     604     False  0.750060  0.249940
+5200   5200     False  0.712411  0.287589
+1493   1493      True  0.707870  0.292130
+1786   1786     False  0.671032  0.328968
+5100   5100     False  0.670395  0.329605
+3028   3028      True  0.645034  0.354966
+4627   4627     False  0.631341  0.368659
+2337   2337     False  0.556657  0.443343
+4979   4979     False  0.535415  0.464585
+Uncertain 1:
+       index  matching    score0    score1
+596     596      True  0.069338  0.930662
+2890   2890     False  0.080807  0.919193
+715     715      True  0.088095  0.911905
+5613   5613      True  0.094408  0.905592
+3216   3216      True  0.128057  0.871943
+3994   3994     False  0.158437  0.841563
+4730   4730     False  0.158593  0.841407
+1408   1408      True  0.174977  0.825023
+559     559     False  0.180033  0.819967
+4372   4372      True  0.217956  0.782044
+3259   3259     False  0.233319  0.766681
+3192   3192     False  0.299364  0.700636
+4959   4959     False  0.334712  0.665288
+1609   1609     False  0.352257  0.647743
+3689   3689     False  0.359367  0.640633
+1114   1114     False  0.363854  0.636146
+5552   5552     False  0.396588  0.603412
+4101   4101     False  0.397740  0.602260
+3678   3678     False  0.443621  0.556379
+3844   3844      True  0.459824  0.540176
+Unconfident samples positive rate: 0.25
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4064516129032258
+Fitting module..
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.1101246252655983, 'test_f1': 0.9063291139240506, 'test_prec': 0.9470899470899471, 'test_recall': 0.8689320388349514, 'labeled_instances': 1240, 'orakle_instances': 720, 'train_positive_rate': 0.4064516129032258, 'pool_positive_rate': 0.02487230735065512, 'iteration_time': 521.492908000946}
+
+### Run 13, 1240 training samples. Pool: 4503. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4503 Time used:  24.70816659927368
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.981 0.    0.    0.    0.    0.    0.    0.    0.    0.018]
+% predicted as match: 0.018210082167443926. 0,1: 4421 82
+High confidence 0:
+       index  matching    score0    score1
+1667   1667     False  0.999811  0.000189
+1298   1298     False  0.999808  0.000192
+2207   2207     False  0.999807  0.000193
+409     409     False  0.999805  0.000195
+2299   2299     False  0.999805  0.000195
+5164   5164     False  0.999804  0.000196
+3742   3742     False  0.999804  0.000196
+5597   5597     False  0.999804  0.000196
+1254   1254     False  0.999803  0.000197
+3831   3831     False  0.999803  0.000197
+4355   4355     False  0.999803  0.000197
+5698   5698     False  0.999802  0.000198
+5018   5018     False  0.999802  0.000198
+1404   1404     False  0.999801  0.000199
+3620   3620     False  0.999801  0.000199
+2865   2865     False  0.999801  0.000199
+1592   1592     False  0.999800  0.000200
+3638   3638     False  0.999800  0.000200
+1034   1034     False  0.999799  0.000201
+2614   2614     False  0.999798  0.000202
+High confidence 1:
+       index  matching    score0    score1
+1558   1558      True  0.000646  0.999354
+1398   1398      True  0.000680  0.999320
+279     279      True  0.000700  0.999300
+158     158      True  0.000707  0.999293
+2951   2951      True  0.000709  0.999291
+4123   4123      True  0.000717  0.999283
+4938   4938      True  0.000728  0.999272
+4498   4498      True  0.000734  0.999266
+4303   4303      True  0.000742  0.999258
+4957   4957      True  0.000745  0.999255
+3406   3406      True  0.000757  0.999243
+4398   4398      True  0.000763  0.999237
+3941   3941      True  0.000765  0.999235
+5013   5013      True  0.000769  0.999231
+2945   2945      True  0.000772  0.999228
+3773   3773      True  0.000778  0.999222
+874     874      True  0.000781  0.999219
+1309   1309      True  0.000799  0.999201
+3938   3938      True  0.000804  0.999196
+1425   1425      True  0.000809  0.999191
+Uncertain 0:
+       index  matching    score0    score1
+4641   4641     False  0.997559  0.002441
+2249   2249     False  0.997342  0.002658
+3661   3661     False  0.996953  0.003047
+2272   2272     False  0.996666  0.003334
+5464   5464     False  0.996396  0.003604
+910     910     False  0.996318  0.003682
+1900   1900     False  0.993730  0.006270
+1846   1846     False  0.993468  0.006532
+3022   3022     False  0.993336  0.006664
+1214   1214      True  0.992734  0.007266
+3237   3237     False  0.991988  0.008012
+3628   3628     False  0.991335  0.008665
+3900   3900     False  0.988215  0.011785
+2736   2736      True  0.985396  0.014604
+4217   4217     False  0.983846  0.016154
+1193   1193     False  0.981780  0.018220
+1937   1937     False  0.975880  0.024120
+3897   3897     False  0.913556  0.086444
+1145   1145     False  0.804710  0.195290
+2321   2321     False  0.715514  0.284486
+Uncertain 1:
+       index  matching    score0    score1
+5433   5433      True  0.001214  0.998786
+4795   4795      True  0.001295  0.998705
+3529   3529      True  0.001311  0.998689
+3125   3125      True  0.001314  0.998686
+4727   4727      True  0.001336  0.998664
+1805   1805      True  0.001391  0.998609
+4342   4342      True  0.001563  0.998437
+2610   2610      True  0.001656  0.998344
+3037   3037      True  0.001763  0.998237
+4888   4888      True  0.002004  0.997996
+4722   4722      True  0.002200  0.997800
+4271   4271      True  0.002471  0.997529
+2919   2919      True  0.002860  0.997140
+218     218      True  0.003588  0.996412
+2008   2008      True  0.003767  0.996233
+2994   2994     False  0.015309  0.984691
+4309   4309      True  0.016861  0.983139
+425     425      True  0.024289  0.975711
+2252   2252     False  0.089100  0.910900
+4830   4830      True  0.175885  0.824115
+Unconfident samples positive rate: 0.5
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4121212121212121
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10183747112751007, 'test_f1': 0.8822055137844612, 'test_prec': 0.9119170984455959, 'test_recall': 0.8543689320388349, 'labeled_instances': 1320, 'orakle_instances': 760, 'train_positive_rate': 0.4121212121212121, 'pool_positive_rate': 0.01627854397467782, 'iteration_time': 513.6633460521698}
+
+### Run 14, 1320 training samples. Pool: 4423. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4423 Time used:  24.532119750976562
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.989 0.001 0.    0.    0.    0.    0.    0.    0.    0.01 ]
+% predicted as match: 0.010174089984173637. 0,1: 4378 45
+High confidence 0:
+       index  matching    score0    score1
+4779   4779     False  0.998403  0.001597
+3407   3407     False  0.998392  0.001608
+2         2     False  0.998367  0.001633
+5010   5010     False  0.998364  0.001636
+238     238     False  0.998362  0.001638
+643     643     False  0.998362  0.001638
+5270   5270     False  0.998353  0.001647
+1117   1117     False  0.998352  0.001648
+5067   5067     False  0.998352  0.001648
+1747   1747     False  0.998348  0.001652
+4402   4402     False  0.998347  0.001653
+241     241     False  0.998340  0.001660
+4752   4752     False  0.998339  0.001661
+2077   2077     False  0.998338  0.001662
+387     387     False  0.998336  0.001664
+3557   3557     False  0.998332  0.001668
+4876   4876     False  0.998331  0.001669
+3429   3429     False  0.998331  0.001669
+1446   1446     False  0.998329  0.001671
+4159   4159     False  0.998329  0.001671
+High confidence 1:
+       index  matching    score0    score1
+5383   5383      True  0.000872  0.999128
+1174   1174      True  0.000890  0.999110
+143     143      True  0.000917  0.999083
+4565   4565      True  0.000920  0.999080
+2195   2195      True  0.000935  0.999065
+3697   3697      True  0.000951  0.999049
+4013   4013      True  0.000951  0.999049
+5640   5640      True  0.000963  0.999037
+1057   1057      True  0.000983  0.999017
+2902   2902      True  0.000986  0.999014
+2679   2679      True  0.000988  0.999012
+2897   2897      True  0.000997  0.999003
+5287   5287      True  0.001005  0.998995
+5298   5298      True  0.001016  0.998984
+5589   5589      True  0.001016  0.998984
+3506   3506      True  0.001022  0.998978
+287     287      True  0.001034  0.998966
+2434   2434      True  0.001055  0.998945
+1680   1680      True  0.001063  0.998937
+4385   4385      True  0.001091  0.998909
+Uncertain 0:
+       index  matching    score0    score1
+4223   4223     False  0.985694  0.014307
+2884   2884     False  0.984980  0.015020
+504     504     False  0.984450  0.015550
+4911   4911     False  0.984316  0.015684
+4709   4709     False  0.982643  0.017357
+2329   2329     False  0.980721  0.019279
+4943   4943     False  0.980441  0.019559
+1205   1205     False  0.980242  0.019758
+120     120     False  0.972633  0.027367
+2634   2634     False  0.970612  0.029388
+2589   2589     False  0.967481  0.032519
+857     857     False  0.965247  0.034753
+1191   1191     False  0.962543  0.037457
+5152   5152     False  0.961653  0.038347
+2544   2544     False  0.956794  0.043206
+3254   3254     False  0.924060  0.075940
+1052   1052     False  0.898092  0.101908
+663     663     False  0.897896  0.102104
+1427   1427      True  0.837992  0.162008
+739     739     False  0.539648  0.460352
+Uncertain 1:
+       index  matching    score0    score1
+4774   4774      True  0.001220  0.998780
+2716   2716      True  0.001270  0.998730
+2362   2362      True  0.001276  0.998724
+2335   2335      True  0.001371  0.998629
+919     919      True  0.001403  0.998597
+4517   4517      True  0.001450  0.998550
+946     946      True  0.001508  0.998492
+3724   3724      True  0.001528  0.998472
+4636   4636      True  0.001546  0.998454
+404     404      True  0.001589  0.998411
+3086   3086      True  0.001592  0.998408
+1276   1276      True  0.001600  0.998400
+3744   3744      True  0.001697  0.998303
+2596   2596      True  0.001758  0.998242
+3279   3279      True  0.002536  0.997464
+3176   3176      True  0.003868  0.996132
+1844   1844      True  0.004067  0.995933
+2891   2891     False  0.005845  0.994155
+90       90     False  0.119270  0.880730
+4852   4852     False  0.346781  0.653219
+Unconfident samples positive rate: 0.45
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4157142857142857
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.08819004893302917, 'test_f1': 0.9168765743073047, 'test_prec': 0.9528795811518325, 'test_recall': 0.883495145631068, 'labeled_instances': 1400, 'orakle_instances': 800, 'train_positive_rate': 0.4157142857142857, 'pool_positive_rate': 0.00782868984572876, 'iteration_time': 536.5411875247955}
+
+### Run 15, 1400 training samples. Pool: 4343. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4343 Time used:  24.392250299453735
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.999 0.    0.    0.    0.    0.    0.    0.    0.    0.001]
+% predicted as match: 0.0011512779184895234. 0,1: 4338 5
+High confidence 0:
+       index  matching    score0    score1
+1573   1573     False  0.999761  0.000239
+1748   1748     False  0.999758  0.000242
+3066   3066     False  0.999756  0.000244
+146     146     False  0.999755  0.000245
+4659   4659     False  0.999754  0.000246
+1698   1698     False  0.999752  0.000248
+2175   2175     False  0.999752  0.000248
+2120   2120     False  0.999752  0.000248
+2784   2784     False  0.999752  0.000248
+3499   3499     False  0.999752  0.000249
+53       53     False  0.999751  0.000249
+1267   1267     False  0.999750  0.000250
+4137   4137     False  0.999750  0.000250
+293     293     False  0.999750  0.000250
+2292   2292     False  0.999749  0.000251
+1808   1808     False  0.999748  0.000252
+4304   4304     False  0.999748  0.000252
+3113   3113     False  0.999748  0.000252
+3417   3417     False  0.999748  0.000252
+4336   4336     False  0.999748  0.000252
+High confidence 1:
+       index  matching    score0    score1
+534     534      True  0.000460  0.999540
+2075   2075      True  0.000569  0.999431
+2462   2462      True  0.000632  0.999368
+632     632      True  0.000654  0.999346
+1362   1362      True  0.000732  0.999268
+Uncertain 0:
+       index  matching    score0    score1
+5585   5585     False  0.998546  0.001454
+2297   2297     False  0.998531  0.001469
+5451   5451     False  0.998409  0.001591
+3124   3124      True  0.998344  0.001656
+2034   2034      True  0.998298  0.001702
+1076   1076     False  0.998243  0.001757
+3857   3857     False  0.998021  0.001979
+2571   2571     False  0.997931  0.002069
+2350   2350     False  0.997745  0.002255
+1996   1996     False  0.997687  0.002313
+4838   4838     False  0.997286  0.002714
+629     629     False  0.996916  0.003084
+3911   3911     False  0.996834  0.003166
+1533   1533     False  0.996081  0.003919
+174     174     False  0.994145  0.005855
+5573   5573     False  0.994001  0.005999
+4450   4450     False  0.993823  0.006177
+3099   3099     False  0.980033  0.019967
+3418   3418     False  0.927454  0.072546
+4697   4697      True  0.830769  0.169231
+Uncertain 1:
+       index  matching    score0    score1
+534     534      True  0.000460  0.999540
+2075   2075      True  0.000569  0.999431
+2462   2462      True  0.000632  0.999368
+632     632      True  0.000654  0.999346
+1362   1362      True  0.000732  0.999268
+!!! Found less than max query_instances!!! 50
+Unconfident samples positive rate: 0.32
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4103448275862069
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.11200346797704697, 'test_f1': 0.8972431077694234, 'test_prec': 0.927461139896373, 'test_recall': 0.8689320388349514, 'labeled_instances': 1450, 'orakle_instances': 825, 'train_positive_rate': 0.4103448275862069, 'pool_positive_rate': 0.00604932526756631, 'iteration_time': 546.2580938339233}
+
+### Run 16, 1450 training samples. Pool: 4298. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4298 Time used:  22.631382703781128
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.999 0.    0.    0.    0.    0.    0.    0.    0.    0.   ]
+% predicted as match: 0.0006979990693345743. 0,1: 4295 3
+High confidence 0:
+       index  matching    score0    score1
+4524   4524     False  0.999825  0.000175
+1995   1995     False  0.999825  0.000175
+4267   4267     False  0.999824  0.000176
+4288   4288     False  0.999824  0.000176
+3805   3805     False  0.999824  0.000176
+1870   1870     False  0.999823  0.000177
+2408   2408     False  0.999823  0.000177
+752     752     False  0.999823  0.000177
+1138   1138     False  0.999823  0.000177
+3373   3373     False  0.999823  0.000177
+3808   3808     False  0.999823  0.000177
+938     938     False  0.999822  0.000178
+3083   3083     False  0.999822  0.000178
+2812   2812     False  0.999822  0.000178
+3692   3692     False  0.999822  0.000178
+5187   5187     False  0.999822  0.000178
+2793   2793     False  0.999822  0.000178
+3876   3876     False  0.999822  0.000178
+426     426     False  0.999821  0.000179
+3353   3353     False  0.999821  0.000179
+High confidence 1:
+       index  matching    score0    score1
+3595   3595      True  0.012621  0.987379
+475     475     False  0.173361  0.826639
+1327   1327     False  0.481356  0.518644
+Uncertain 0:
+       index  matching    score0    score1
+2109   2109     False  0.997163  0.002837
+3096   3096     False  0.997110  0.002890
+4041   4041     False  0.996988  0.003012
+2320   2320     False  0.996876  0.003124
+2662   2662     False  0.996829  0.003171
+5386   5386     False  0.996392  0.003608
+5670   5670     False  0.994861  0.005139
+917     917     False  0.994722  0.005278
+1197   1197     False  0.993519  0.006481
+1211   1211     False  0.992801  0.007199
+4905   4905     False  0.991448  0.008552
+3544   3544     False  0.991277  0.008723
+4449   4449     False  0.990182  0.009818
+4433   4433     False  0.986395  0.013605
+4020   4020     False  0.985984  0.014016
+2668   2668     False  0.982039  0.017961
+4695   4695     False  0.981900  0.018100
+4663   4663     False  0.967487  0.032513
+3416   3416     False  0.960056  0.039944
+4477   4477     False  0.878550  0.121450
+Uncertain 1:
+       index  matching    score0    score1
+3595   3595      True  0.012621  0.987379
+475     475     False  0.173361  0.826639
+1327   1327     False  0.481356  0.518644
+!!! Found less than max query_instances!!! 46
+Unconfident samples positive rate: 0.043478260869565216
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.3333333333333333
+Total train positive rate: 0.39906417112299464
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.08786558359861374, 'test_f1': 0.9064039408866995, 'test_prec': 0.92, 'test_recall': 0.8932038834951457, 'labeled_instances': 1496, 'orakle_instances': 848, 'train_positive_rate': 0.39906417112299464, 'pool_positive_rate': 0.005875440658049354, 'iteration_time': 526.2376048564911}
+
+### Run 17, 1496 training samples. Pool: 4255. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4255 Time used:  23.063289880752563
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.997 0.    0.    0.001 0.    0.    0.    0.    0.    0.001]
+% predicted as match: 0.0009400705052878966. 0,1: 4251 4
+High confidence 0:
+       index  matching    score0    score1
+4985   4985     False  0.999178  0.000822
+912     912     False  0.999176  0.000824
+707     707     False  0.999175  0.000825
+4451   4451     False  0.999174  0.000826
+4125   4125     False  0.999170  0.000830
+160     160     False  0.999170  0.000830
+1668   1668     False  0.999170  0.000830
+3059   3059     False  0.999169  0.000831
+257     257     False  0.999169  0.000831
+5218   5218     False  0.999169  0.000831
+694     694     False  0.999169  0.000831
+5131   5131     False  0.999168  0.000832
+2256   2256     False  0.999168  0.000832
+4506   4506     False  0.999168  0.000832
+2906   2906     False  0.999168  0.000832
+2647   2647     False  0.999168  0.000832
+776     776     False  0.999167  0.000833
+4658   4658     False  0.999167  0.000833
+1312   1312     False  0.999167  0.000833
+2470   2470     False  0.999167  0.000833
+High confidence 1:
+       index  matching    score0    score1
+4306   4306     False  0.003327  0.996673
+5602   5602     False  0.005063  0.994937
+549     549     False  0.006803  0.993197
+4199   4199     False  0.013992  0.986008
+Uncertain 0:
+       index  matching    score0    score1
+3449   3449     False  0.954210  0.045790
+12       12     False  0.947862  0.052138
+1720   1720     False  0.947025  0.052975
+2690   2690     False  0.945089  0.054911
+710     710     False  0.943798  0.056202
+1911   1911     False  0.943551  0.056449
+1933   1933     False  0.941377  0.058623
+3147   3147     False  0.929040  0.070960
+1502   1502     False  0.928792  0.071208
+1614   1614     False  0.926253  0.073747
+5030   5030     False  0.917752  0.082248
+3710   3710     False  0.914859  0.085141
+3040   3040     False  0.914364  0.085636
+123     123     False  0.895475  0.104525
+1702   1702     False  0.887397  0.112603
+740     740     False  0.792670  0.207330
+4268   4268     False  0.719983  0.280017
+3774   3774     False  0.691346  0.308654
+1713   1713     False  0.682955  0.317045
+5222   5222     False  0.606511  0.393489
+Uncertain 1:
+       index  matching    score0    score1
+4306   4306     False  0.003327  0.996673
+5602   5602     False  0.005063  0.994937
+549     549     False  0.006803  0.993197
+4199   4199     False  0.013992  0.986008
+!!! Found less than max query_instances!!! 48
+Unconfident samples positive rate: 0.0
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.0
+Total train positive rate: 0.3866580310880829
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.11194268614053726, 'test_f1': 0.8877805486284289, 'test_prec': 0.9128205128205128, 'test_recall': 0.8640776699029126, 'labeled_instances': 1544, 'orakle_instances': 872, 'train_positive_rate': 0.3866580310880829, 'pool_positive_rate': 0.005936832106388032, 'iteration_time': 534.2829713821411}
+
+### Run 18, 1544 training samples. Pool: 4211. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4211 Time used:  22.853480100631714
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.999 0.    0.    0.    0.    0.    0.    0.    0.    0.   ]
+% predicted as match: 0.0007124198527665638. 0,1: 4208 3
+High confidence 0:
+       index  matching    score0    score1
+2148   2148     False  0.999822  0.000178
+17       17     False  0.999816  0.000184
+4614   4614     False  0.999814  0.000186
+5108   5108     False  0.999813  0.000187
+1587   1587     False  0.999812  0.000188
+78       78     False  0.999812  0.000188
+5257   5257     False  0.999812  0.000188
+2009   2009     False  0.999812  0.000188
+2143   2143     False  0.999811  0.000189
+1113   1113     False  0.999811  0.000189
+3725   3725     False  0.999811  0.000189
+664     664     False  0.999811  0.000189
+3814   3814     False  0.999810  0.000190
+2948   2948     False  0.999810  0.000190
+2381   2381     False  0.999810  0.000190
+2345   2345     False  0.999810  0.000190
+4994   4994     False  0.999810  0.000190
+5176   5176     False  0.999810  0.000191
+2211   2211     False  0.999809  0.000191
+4089   4089     False  0.999809  0.000191
+High confidence 1:
+       index  matching    score0    score1
+781     781     False  0.054174  0.945826
+3793   3793     False  0.078932  0.921068
+3343   3343     False  0.101176  0.898824
+Uncertain 0:
+       index  matching    score0    score1
+5332   5332     False  0.999277  0.000723
+441     441     False  0.999273  0.000727
+262     262     False  0.999258  0.000742
+196     196     False  0.999249  0.000751
+4769   4769     False  0.999238  0.000762
+1137   1137     False  0.999226  0.000774
+1068   1068     False  0.999224  0.000776
+3345   3345     False  0.999199  0.000801
+3103   3103     False  0.998602  0.001398
+466     466     False  0.998601  0.001399
+2961   2961     False  0.998276  0.001724
+2481   2481     False  0.997270  0.002730
+4626   4626     False  0.988230  0.011770
+5190   5190     False  0.987412  0.012588
+812     812     False  0.986717  0.013283
+151     151     False  0.983071  0.016929
+3997   3997     False  0.974148  0.025852
+4439   4439     False  0.947919  0.052080
+2559   2559     False  0.917738  0.082262
+3950   3950     False  0.895776  0.104224
+Uncertain 1:
+       index  matching    score0    score1
+781     781     False  0.054174  0.945826
+3793   3793     False  0.078932  0.921068
+3343   3343     False  0.101176  0.898824
+!!! Found less than max query_instances!!! 46
+Unconfident samples positive rate: 0.0
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.0
+Total train positive rate: 0.3754716981132076
+Fitting module..
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.08539280295372009, 'test_f1': 0.9177057356608479, 'test_prec': 0.9435897435897436, 'test_recall': 0.8932038834951457, 'labeled_instances': 1590, 'orakle_instances': 895, 'train_positive_rate': 0.3754716981132076, 'pool_positive_rate': 0.005998080614203455, 'iteration_time': 527.7312791347504}
+
+### Run 19, 1590 training samples. Pool: 4168. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4168 Time used:  22.871674299240112
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.999 0.    0.    0.    0.    0.    0.    0.    0.    0.   ]
+% predicted as match: 0.0002399232245681382. 0,1: 4167 1
+High confidence 0:
+       index  matching    score0    score1
+4745   4745     False  0.999787  0.000213
+597     597     False  0.999787  0.000213
+1551   1551     False  0.999787  0.000213
+3781   3781     False  0.999786  0.000214
+904     904     False  0.999786  0.000214
+5547   5547     False  0.999786  0.000214
+4365   4365     False  0.999786  0.000214
+4653   4653     False  0.999785  0.000215
+5113   5113     False  0.999785  0.000215
+4224   4224     False  0.999785  0.000215
+1916   1916      True  0.999785  0.000215
+1208   1208     False  0.999785  0.000215
+2673   2673     False  0.999785  0.000215
+3910   3910     False  0.999785  0.000215
+3313   3313     False  0.999785  0.000215
+2552   2552     False  0.999785  0.000215
+1341   1341     False  0.999785  0.000215
+5643   5643     False  0.999785  0.000215
+5092   5092     False  0.999785  0.000215
+4127   4127     False  0.999785  0.000215
+High confidence 1:
+       index  matching    score0    score1
+3058   3058     False  0.017232  0.982768
+Uncertain 0:
+       index  matching    score0    score1
+3404   3404     False  0.999483  0.000517
+3759   3759     False  0.999479  0.000521
+1421   1421     False  0.999479  0.000521
+2473   2473      True  0.999466  0.000534
+3214   3214     False  0.999466  0.000534
+4696   4696     False  0.999466  0.000534
+3427   3427     False  0.999367  0.000633
+4300   4300     False  0.999275  0.000725
+202     202     False  0.999262  0.000738
+3918   3918     False  0.999233  0.000767
+5408   5408     False  0.999171  0.000829
+1695   1695     False  0.998902  0.001098
+497     497     False  0.998713  0.001287
+4400   4400     False  0.998458  0.001542
+4083   4083     False  0.995871  0.004129
+5668   5668     False  0.995723  0.004277
+3425   3425     False  0.989679  0.010321
+5319   5319     False  0.987513  0.012487
+4680   4680     False  0.868481  0.131519
+3302   3302     False  0.806457  0.193543
+Uncertain 1:
+       index  matching    score0    score1
+3058   3058     False  0.017232  0.982768
+!!! Found less than max query_instances!!! 42
+Unconfident samples positive rate: 0.047619047619047616
+Negative confident samples positive rate: 0.05
+Positive confident samples positive rate: 0.0
+Total train positive rate: 0.36703431372549017
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.08547496050596237, 'test_f1': 0.8955223880597014, 'test_prec': 0.9183673469387755, 'test_recall': 0.8737864077669902, 'labeled_instances': 1632, 'orakle_instances': 916, 'train_positive_rate': 0.36703431372549017, 'pool_positive_rate': 0.005573055488248122, 'iteration_time': 545.8181893825531}
+Finished! Total time: 10246.406993150711
+Cross validation time:  10257.381950616837
+########### 
+###
+##
+#
+RUN 2   New Dataset: <function deepmatcher_textual_abt_buy at 0x14ea22c9f430>
+[2264 3677  839 5264 5437  277 4238 4505   88 2729 3170 5635 1069 3126
+ 3676 5695  989  619 4750 1156 5326 3331 5661 1082 4404  257 3467 5636
+  213 5057 4970 4464 2906 2926 5121 4773  811 1807 2414   72 2106    3
+ 3950 4433 1836 1619 1135 4302 4927 2900 3166  922 3952 3659 3793 1972
+ 1291 2479 3656 4226 5447 4171 2224 5319 3187  463 3499 5492 1146 1304
+ 3427   15 3672 4809 3937 1379 3701 2922 2118 1794 1706 4952  380  683
+ 4820 1279 2601 1744 2726 1558 2425 2387 2714 4001 1614  809  696  587
+ 2072 3179 2057 2532 2975   27 4173 1894 2995 4503 4082 4108  721 4725
+ 4104 3946 1760  963 1821 3815 2183 3209  338 3292 3409  582  936 2958
+ 5734 4429 5476 4308  112 1560  385 3245 3303 1746 2917 5314 3249 3712
+  925 4957 3084 1838 5137 2253 1996 3036 5486 3481 5054 3533  938 1599
+ 4272 2641 4454 4328 5354 2398 1561 2184 4863  273 3813 4541 4172 5475
+  399 1017 1650 5460 2296 4878 3081  705 5235 4609 1840 5639 1395 3178
+ 3896 5614  921  887 3045 5540 1187 1608 1597 5052 2046  562  207 4823
+  489  499 5563 1945]
+Train samples: 200 , pool samples: 5543 Total: 5743
+Train pos rate: 0.09
+
+## Starting AL iterations ##
+
+Initial GPU usage
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+Initial data: {'test_loss': 0.28700685501098633, 'test_f1': 0.6686567164179104, 'test_prec': 0.8682170542635659, 'test_recall': 0.5436893203883495, 'labeled_instances': 200, 'orakle_instances': 200, 'iteration_time': 386.2503082752228, 'train_positive_rate': 0.09, 'pool_positive_rate': 0.1078838174273859}
+
+### Run 0, 200 training samples. Pool: 5543. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 5543 Time used:  31.796013832092285
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.923 0.005 0.003 0.002 0.001 0.001 0.003 0.002 0.006 0.054]
+% predicted as match: 0.06566841060797401. 0,1: 5179 364
+High confidence 0:
+       index  matching    score0    score1
+2         2     False  0.999325  0.000675
+91       91     False  0.999315  0.000685
+2486   2486     False  0.999310  0.000690
+3167   3167     False  0.999310  0.000690
+3719   3719     False  0.999308  0.000692
+2828   2828     False  0.999307  0.000693
+3984   3984     False  0.999305  0.000695
+1139   1139     False  0.999305  0.000695
+5032   5032     False  0.999304  0.000696
+2102   2102     False  0.999304  0.000696
+3256   3256     False  0.999304  0.000696
+3693   3693     False  0.999304  0.000696
+3220   3220     False  0.999304  0.000696
+3642   3642     False  0.999304  0.000696
+5149   5149     False  0.999304  0.000696
+294     294     False  0.999303  0.000697
+3879   3879     False  0.999303  0.000697
+4868   4868     False  0.999303  0.000697
+5489   5489     False  0.999303  0.000697
+545     545     False  0.999303  0.000698
+High confidence 1:
+       index  matching    score0    score1
+1930   1930     False  0.009326  0.990674
+2315   2315      True  0.009415  0.990585
+1844   1844      True  0.009586  0.990414
+4816   4816      True  0.009844  0.990156
+1122   1122      True  0.009890  0.990110
+3438   3438      True  0.010243  0.989757
+2240   2240      True  0.010335  0.989665
+4348   4348     False  0.010470  0.989530
+310     310      True  0.010490  0.989510
+5119   5119      True  0.010528  0.989472
+1405   1405      True  0.010612  0.989388
+633     633      True  0.010692  0.989308
+2610   2610      True  0.010790  0.989210
+4294   4294      True  0.010796  0.989204
+5640   5640      True  0.010845  0.989155
+2902   2902      True  0.010864  0.989136
+1286   1286      True  0.010897  0.989103
+5598   5598      True  0.011007  0.988993
+1245   1245      True  0.011014  0.988986
+4692   4692      True  0.011040  0.988960
+Uncertain 0:
+       index  matching    score0    score1
+1305   1305     False  0.687311  0.312689
+1938   1938      True  0.677910  0.322090
+1016   1016      True  0.670312  0.329688
+4385   4385      True  0.661033  0.338967
+2960   2960      True  0.644070  0.355930
+3487   3487     False  0.638348  0.361652
+3616   3616      True  0.637336  0.362664
+4682   4682     False  0.628924  0.371076
+1994   1994     False  0.628652  0.371348
+2518   2518      True  0.616116  0.383884
+2070   2070     False  0.609593  0.390407
+3506   3506      True  0.605446  0.394554
+4727   4727      True  0.559577  0.440423
+264     264      True  0.541356  0.458644
+4185   4185     False  0.539050  0.460950
+3497   3497      True  0.537104  0.462896
+3430   3430     False  0.534532  0.465468
+2190   2190     False  0.528402  0.471598
+1408   1408      True  0.507748  0.492252
+3924   3924     False  0.500942  0.499058
+Uncertain 1:
+       index  matching    score0    score1
+434     434      True  0.279374  0.720626
+4704   4704     False  0.293776  0.706224
+859     859      True  0.302532  0.697468
+4374   4374      True  0.307997  0.692003
+308     308      True  0.315249  0.684751
+158     158      True  0.323869  0.676131
+3419   3419      True  0.330062  0.669938
+5617   5617     False  0.330416  0.669584
+126     126      True  0.331213  0.668787
+1244   1244     False  0.334971  0.665029
+3595   3595      True  0.338477  0.661523
+244     244      True  0.339250  0.660750
+4271   4271      True  0.342601  0.657399
+5208   5208      True  0.351456  0.648544
+3575   3575      True  0.360257  0.639743
+1276   1276      True  0.372167  0.627833
+4567   4567      True  0.382972  0.617028
+2025   2025     False  0.418507  0.581493
+5667   5667      True  0.491616  0.508384
+3514   3514      True  0.499120  0.500880
+Unconfident samples positive rate: 0.675
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.9
+Total train positive rate: 0.225
+Fitting module..
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.2792835533618927, 'test_f1': 0.6949152542372881, 'test_prec': 0.831081081081081, 'test_recall': 0.5970873786407767, 'labeled_instances': 280, 'orakle_instances': 240, 'train_positive_rate': 0.225, 'pool_positive_rate': 0.10122643236317042, 'iteration_time': 444.0841670036316}
+
+### Run 1, 280 training samples. Pool: 5463. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 5463 Time used:  31.922735929489136
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.91  0.005 0.003 0.003 0.003 0.001 0.003 0.003 0.003 0.067]
+% predicted as match: 0.07706388431264873. 0,1: 5042 421
+High confidence 0:
+       index  matching    score0    score1
+5663   5663     False  0.999529  0.000471
+3184   3184     False  0.999527  0.000473
+4524   4524     False  0.999523  0.000477
+3679   3679     False  0.999522  0.000478
+4474   4474     False  0.999521  0.000479
+2313   2313     False  0.999521  0.000479
+895     895     False  0.999518  0.000482
+3590   3590     False  0.999517  0.000483
+1504   1504     False  0.999517  0.000483
+1607   1607     False  0.999515  0.000485
+4721   4721     False  0.999514  0.000486
+4593   4593     False  0.999513  0.000487
+4323   4323     False  0.999512  0.000488
+3730   3730     False  0.999512  0.000488
+2400   2400     False  0.999511  0.000489
+4767   4767     False  0.999511  0.000489
+2286   2286     False  0.999511  0.000489
+749     749     False  0.999510  0.000490
+2280   2280     False  0.999509  0.000491
+1556   1556     False  0.999507  0.000492
+High confidence 1:
+       index  matching    score0    score1
+1222   1222      True  0.002714  0.997286
+2474   2474      True  0.002853  0.997147
+1678   1678      True  0.002886  0.997114
+2789   2789      True  0.002893  0.997107
+5623   5623      True  0.002894  0.997106
+305     305      True  0.002915  0.997085
+5093   5093      True  0.002917  0.997083
+1150   1150      True  0.002932  0.997068
+1534   1534      True  0.002935  0.997065
+900     900      True  0.002943  0.997057
+100     100      True  0.002947  0.997053
+1865   1865      True  0.002973  0.997027
+3943   3943      True  0.002980  0.997020
+1189   1189      True  0.002991  0.997009
+1888   1888      True  0.002996  0.997004
+5659   5659      True  0.002998  0.997002
+1806   1806      True  0.003003  0.996997
+4007   4007      True  0.003013  0.996987
+4786   4786      True  0.003015  0.996985
+2462   2462      True  0.003022  0.996978
+Uncertain 0:
+       index  matching    score0    score1
+2415   2415      True  0.645505  0.354495
+3627   3627      True  0.644296  0.355704
+1412   1412     False  0.639565  0.360435
+3614   3614     False  0.629849  0.370151
+4138   4138     False  0.624755  0.375245
+2919   2919      True  0.613315  0.386685
+3372   3372      True  0.598576  0.401424
+2631   2631      True  0.586216  0.413784
+3478   3478      True  0.585673  0.414327
+3129   3129      True  0.571435  0.428565
+3818   3818      True  0.570317  0.429683
+2047   2047      True  0.569714  0.430286
+4023   4023      True  0.527488  0.472512
+5656   5656      True  0.527448  0.472552
+1721   1721     False  0.525747  0.474253
+2413   2413     False  0.515985  0.484015
+4151   4151     False  0.514011  0.485989
+4739   4739      True  0.509596  0.490404
+5075   5075      True  0.509055  0.490945
+3418   3418     False  0.505538  0.494462
+Uncertain 1:
+       index  matching    score0    score1
+2884   2884     False  0.331117  0.668883
+3752   3752     False  0.333942  0.666058
+1540   1540      True  0.335215  0.664785
+3073   3073      True  0.339617  0.660383
+5670   5670     False  0.340750  0.659250
+2145   2145     False  0.344645  0.655355
+1463   1463      True  0.346790  0.653210
+5505   5505     False  0.350666  0.649334
+2330   2330     False  0.365249  0.634751
+5275   5275     False  0.379960  0.620040
+2691   2691     False  0.386195  0.613805
+977     977      True  0.387276  0.612724
+2275   2275     False  0.387929  0.612071
+3037   3037      True  0.403618  0.596382
+935     935      True  0.424517  0.575483
+1755   1755     False  0.431659  0.568341
+2241   2241     False  0.459788  0.540212
+5574   5574     False  0.481966  0.518034
+1547   1547      True  0.486948  0.513052
+4469   4469     False  0.492399  0.507601
+Unconfident samples positive rate: 0.5
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.2861111111111111
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.2011823207139969, 'test_f1': 0.7727272727272727, 'test_prec': 0.9315068493150684, 'test_recall': 0.6601941747572816, 'labeled_instances': 360, 'orakle_instances': 280, 'train_positive_rate': 0.2861111111111111, 'pool_positive_rate': 0.09530001857700167, 'iteration_time': 447.81293201446533}
+
+### Run 2, 360 training samples. Pool: 5383. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 5383 Time used:  29.530070066452026
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.924 0.002 0.001 0.002 0.001 0.002 0.002 0.002 0.002 0.061]
+% predicted as match: 0.06966375626973806. 0,1: 5008 375
+High confidence 0:
+       index  matching    score0    score1
+2792   2792     False  0.999006  0.000994
+2511   2511     False  0.999000  0.001000
+235     235     False  0.998999  0.001001
+4313   4313     False  0.998994  0.001006
+1449   1449     False  0.998992  0.001008
+4284   4284     False  0.998991  0.001009
+1164   1164     False  0.998990  0.001010
+2702   2702     False  0.998987  0.001013
+2992   2992     False  0.998983  0.001017
+1800   1800     False  0.998982  0.001018
+609     609     False  0.998980  0.001020
+2888   2888     False  0.998980  0.001020
+1319   1319     False  0.998978  0.001022
+649     649     False  0.998975  0.001025
+2113   2113     False  0.998972  0.001028
+2464   2464     False  0.998971  0.001029
+5471   5471     False  0.998971  0.001029
+634     634     False  0.998970  0.001030
+1924   1924     False  0.998969  0.001031
+141     141     False  0.998969  0.001031
+High confidence 1:
+       index  matching    score0    score1
+3522   3522      True  0.001794  0.998206
+2521   2521      True  0.001800  0.998200
+1461   1461      True  0.001804  0.998196
+5160   5160      True  0.001805  0.998195
+2921   2921      True  0.001812  0.998188
+3644   3644      True  0.001814  0.998186
+2279   2279      True  0.001831  0.998169
+5498   5498      True  0.001831  0.998169
+3401   3401      True  0.001832  0.998168
+2110   2110      True  0.001838  0.998162
+5714   5714      True  0.001841  0.998159
+1174   1174      True  0.001851  0.998149
+4152   4152      True  0.001854  0.998146
+3986   3986      True  0.001860  0.998140
+4055   4055      True  0.001863  0.998137
+4565   4565      True  0.001872  0.998128
+3435   3435      True  0.001875  0.998125
+3631   3631      True  0.001876  0.998124
+919     919      True  0.001877  0.998123
+1383   1383      True  0.001878  0.998122
+Uncertain 0:
+       index  matching    score0    score1
+5538   5538      True  0.797825  0.202175
+2681   2681      True  0.773677  0.226323
+923     923     False  0.755492  0.244508
+4641   4641     False  0.755059  0.244941
+4236   4236      True  0.737046  0.262954
+3127   3127     False  0.721046  0.278954
+2721   2721     False  0.710474  0.289526
+2658   2658     False  0.699557  0.300443
+2107   2107     False  0.681279  0.318721
+454     454      True  0.675677  0.324323
+5241   5241     False  0.671145  0.328855
+180     180      True  0.661690  0.338310
+4258   4258     False  0.646412  0.353588
+218     218      True  0.641736  0.358264
+1362   1362      True  0.619677  0.380323
+2945   2945      True  0.607165  0.392835
+2642   2642      True  0.604584  0.395416
+1055   1055      True  0.554735  0.445265
+487     487      True  0.549713  0.450287
+1213   1213      True  0.525512  0.474488
+Uncertain 1:
+       index  matching    score0    score1
+3119   3119      True  0.315243  0.684757
+4569   4569      True  0.317976  0.682024
+1191   1191     False  0.325977  0.674023
+4967   4967      True  0.355965  0.644035
+5171   5171     False  0.359335  0.640665
+2214   2214      True  0.373192  0.626808
+2449   2449     False  0.385952  0.614048
+2329   2329     False  0.386542  0.613458
+4234   4234      True  0.391666  0.608334
+2371   2371      True  0.404480  0.595520
+874     874      True  0.406305  0.593695
+2976   2976     False  0.419636  0.580364
+3812   3812      True  0.430527  0.569473
+1805   1805      True  0.431787  0.568213
+941     941      True  0.433204  0.566796
+5466   5466      True  0.456095  0.543905
+3778   3778      True  0.458192  0.541808
+5421   5421      True  0.466888  0.533112
+914     914     False  0.467724  0.532276
+5133   5133      True  0.472436  0.527564
+Unconfident samples positive rate: 0.65
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.3386363636363636
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.16338549554347992, 'test_f1': 0.8051282051282052, 'test_prec': 0.8532608695652174, 'test_recall': 0.7621359223300971, 'labeled_instances': 440, 'orakle_instances': 320, 'train_positive_rate': 0.3386363636363636, 'pool_positive_rate': 0.08806336036205921, 'iteration_time': 460.440212726593}
+
+### Run 3, 440 training samples. Pool: 5303. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 5303 Time used:  29.267911434173584
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.911 0.004 0.003 0.002 0.002 0.001 0.002 0.001 0.004 0.071]
+% predicted as match: 0.0788233075617575. 0,1: 4885 418
+High confidence 0:
+       index  matching    score0    score1
+924     924     False  0.999618  0.000382
+1917   1917     False  0.999617  0.000383
+5677   5677     False  0.999613  0.000387
+2969   2969     False  0.999605  0.000395
+440     440     False  0.999605  0.000395
+1521   1521     False  0.999604  0.000396
+5713   5713     False  0.999604  0.000396
+3040   3040     False  0.999604  0.000396
+5362   5362     False  0.999603  0.000397
+5457   5457     False  0.999602  0.000398
+1392   1392     False  0.999600  0.000400
+1246   1246     False  0.999599  0.000401
+5557   5557     False  0.999599  0.000401
+1592   1592     False  0.999598  0.000402
+5250   5250     False  0.999597  0.000403
+3068   3068     False  0.999597  0.000403
+5074   5074     False  0.999597  0.000403
+4054   4054     False  0.999596  0.000404
+4014   4014     False  0.999595  0.000405
+4842   4842     False  0.999594  0.000406
+High confidence 1:
+       index  matching    score0    score1
+556     556      True  0.001524  0.998476
+2255   2255      True  0.001539  0.998461
+5013   5013      True  0.001545  0.998455
+274     274      True  0.001551  0.998449
+5046   5046      True  0.001561  0.998439
+1085   1085      True  0.001573  0.998427
+2801   2801      True  0.001574  0.998426
+534     534      True  0.001589  0.998411
+4114   4114      True  0.001593  0.998407
+5298   5298      True  0.001596  0.998404
+5193   5193      True  0.001598  0.998402
+5703   5703      True  0.001599  0.998401
+216     216      True  0.001602  0.998398
+381     381      True  0.001612  0.998388
+3938   3938      True  0.001619  0.998381
+2567   2567      True  0.001625  0.998375
+2751   2751      True  0.001628  0.998372
+2547   2547      True  0.001631  0.998369
+3738   3738      True  0.001636  0.998364
+4123   4123      True  0.001639  0.998361
+Uncertain 0:
+       index  matching    score0    score1
+3741   3741     False  0.714204  0.285796
+3782   3782     False  0.675146  0.324854
+25       25     False  0.670125  0.329875
+544     544     False  0.661429  0.338571
+4059   4059      True  0.660554  0.339446
+3305   3305     False  0.658399  0.341601
+2562   2562     False  0.649686  0.350314
+715     715      True  0.637803  0.362197
+2247   2247      True  0.618862  0.381138
+2271   2271     False  0.610354  0.389646
+1886   1886      True  0.607715  0.392285
+3098   3098      True  0.599296  0.400704
+4999   4999     False  0.596700  0.403300
+2266   2266     False  0.595267  0.404733
+5011   5011     False  0.574096  0.425904
+470     470     False  0.554887  0.445113
+5357   5357     False  0.540264  0.459736
+3843   3843     False  0.534940  0.465060
+3124   3124      True  0.534214  0.465786
+559     559     False  0.501629  0.498371
+Uncertain 1:
+       index  matching    score0    score1
+2988   2988      True  0.278890  0.721110
+3311   3311     False  0.288089  0.711911
+2249   2249     False  0.289766  0.710234
+4237   4237     False  0.300662  0.699338
+3378   3378      True  0.313535  0.686465
+2624   2624      True  0.314787  0.685213
+3488   3488     False  0.316276  0.683724
+1214   1214      True  0.325154  0.674846
+2870   2870      True  0.325827  0.674173
+2165   2165      True  0.338093  0.661907
+4854   4854     False  0.361835  0.638165
+5528   5528      True  0.368192  0.631808
+788     788      True  0.388361  0.611639
+427     427      True  0.389136  0.610864
+4697   4697      True  0.415733  0.584267
+1457   1457     False  0.430177  0.569823
+5409   5409     False  0.438083  0.561917
+490     490      True  0.448764  0.551236
+4392   4392      True  0.455252  0.544748
+5550   5550     False  0.472981  0.527019
+Unconfident samples positive rate: 0.45
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.3596153846153846
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.13682004809379578, 'test_f1': 0.8724489795918366, 'test_prec': 0.9193548387096774, 'test_recall': 0.8300970873786407, 'labeled_instances': 520, 'orakle_instances': 360, 'train_positive_rate': 0.3596153846153846, 'pool_positive_rate': 0.08213670304422746, 'iteration_time': 470.194128036499}
+
+### Run 4, 520 training samples. Pool: 5223. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 5223 Time used:  31.494396924972534
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.922 0.002 0.001 0.001 0.001 0.001 0.001 0.002 0.001 0.069]
+% predicted as match: 0.07275512157763737. 0,1: 4843 380
+High confidence 0:
+       index  matching    score0    score1
+1373   1373     False  0.999700  0.000300
+3349   3349     False  0.999699  0.000301
+3032   3032     False  0.999695  0.000305
+233     233     False  0.999695  0.000305
+1350   1350     False  0.999695  0.000305
+2682   2682     False  0.999694  0.000306
+3517   3517     False  0.999693  0.000307
+1381   1381     False  0.999692  0.000308
+2918   2918     False  0.999692  0.000308
+3586   3586     False  0.999688  0.000312
+1142   1142     False  0.999688  0.000312
+4997   4997     False  0.999687  0.000313
+3681   3681     False  0.999687  0.000313
+1348   1348     False  0.999686  0.000314
+2539   2539     False  0.999685  0.000315
+1903   1903     False  0.999684  0.000316
+771     771     False  0.999684  0.000316
+1223   1223     False  0.999682  0.000318
+3920   3920     False  0.999682  0.000318
+2594   2594     False  0.999681  0.000319
+High confidence 1:
+       index  matching    score0    score1
+1590   1590      True  0.000897  0.999103
+4714   4714      True  0.000914  0.999086
+2956   2956      True  0.000919  0.999081
+2261   2261      True  0.000927  0.999073
+5365   5365      True  0.000928  0.999072
+2210   2210      True  0.000931  0.999069
+2716   2716      True  0.000932  0.999068
+3668   3668      True  0.000938  0.999062
+3422   3422      True  0.000939  0.999061
+5454   5454      True  0.000945  0.999055
+1134   1134      True  0.000953  0.999047
+4070   4070      True  0.000954  0.999046
+4894   4894      True  0.000961  0.999039
+5303   5303      True  0.000963  0.999037
+2843   2843      True  0.000968  0.999032
+981     981      True  0.000968  0.999032
+2342   2342      True  0.000973  0.999027
+1105   1105      True  0.000976  0.999024
+3722   3722      True  0.000977  0.999023
+2504   2504      True  0.000980  0.999020
+Uncertain 0:
+       index  matching    score0    score1
+4896   4896      True  0.843728  0.156272
+5399   5399      True  0.838764  0.161236
+1544   1544      True  0.837619  0.162381
+3260   3260     False  0.824975  0.175025
+2699   2699     False  0.813172  0.186828
+3706   3706     False  0.799888  0.200112
+3448   3448     False  0.793424  0.206576
+678     678     False  0.783586  0.216414
+1171   1171     False  0.779299  0.220701
+2833   2833     False  0.752879  0.247121
+2924   2924     False  0.694547  0.305453
+3043   3043     False  0.693111  0.306889
+5265   5265      True  0.680816  0.319184
+1407   1407     False  0.650415  0.349585
+2083   2083      True  0.639177  0.360823
+1121   1121      True  0.604816  0.395184
+1057   1057      True  0.565598  0.434402
+2737   2737      True  0.514324  0.485676
+179     179      True  0.509421  0.490579
+2632   2632      True  0.503468  0.496532
+Uncertain 1:
+       index  matching    score0    score1
+1833   1833      True  0.163224  0.836776
+2059   2059      True  0.181591  0.818409
+3764   3764     False  0.198121  0.801879
+3584   3584      True  0.202298  0.797702
+3181   3181      True  0.215014  0.784986
+5361   5361     False  0.227219  0.772781
+5155   5155      True  0.228051  0.771949
+517     517      True  0.249376  0.750624
+756     756     False  0.260074  0.739926
+687     687      True  0.261871  0.738129
+4407   4407     False  0.294916  0.705084
+778     778     False  0.296894  0.703106
+5664   5664      True  0.312851  0.687149
+1946   1946      True  0.340231  0.659769
+1287   1287     False  0.394929  0.605071
+5201   5201      True  0.424548  0.575452
+3252   3252      True  0.431753  0.568247
+1129   1129     False  0.432760  0.567240
+820     820     False  0.480920  0.519080
+4383   4383     False  0.497506  0.502494
+Unconfident samples positive rate: 0.525
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.38
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.13513445854187012, 'test_f1': 0.8616187989556136, 'test_prec': 0.9322033898305084, 'test_recall': 0.8009708737864077, 'labeled_instances': 600, 'orakle_instances': 400, 'train_positive_rate': 0.38, 'pool_positive_rate': 0.07544234882364378, 'iteration_time': 482.00838112831116}
+
+### Run 5, 600 training samples. Pool: 5143. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 5143 Time used:  28.86004090309143
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.931 0.002 0.    0.001 0.001 0.001 0.    0.001 0.001 0.061]
+% predicted as match: 0.06494264048220882. 0,1: 4809 334
+High confidence 0:
+       index  matching    score0    score1
+1021   1021     False  0.999654  0.000346
+3012   3012     False  0.999649  0.000351
+1568   1568     False  0.999648  0.000352
+2405   2405     False  0.999646  0.000354
+3387   3387     False  0.999645  0.000355
+2295   2295     False  0.999644  0.000356
+653     653     False  0.999644  0.000356
+5251   5251     False  0.999643  0.000357
+4122   4122     False  0.999643  0.000357
+2150   2150     False  0.999642  0.000358
+2771   2771     False  0.999642  0.000358
+402     402     False  0.999642  0.000358
+1928   1928     False  0.999641  0.000359
+445     445     False  0.999641  0.000359
+2085   2085     False  0.999641  0.000359
+3716   3716     False  0.999641  0.000359
+5597   5597     False  0.999641  0.000359
+4647   4647     False  0.999641  0.000359
+5108   5108     False  0.999640  0.000360
+248     248     False  0.999640  0.000360
+High confidence 1:
+       index  matching    score0    score1
+4938   4938      True  0.000634  0.999366
+5297   5297      True  0.000641  0.999359
+5008   5008      True  0.000653  0.999347
+4828   4828      True  0.000658  0.999342
+5062   5062      True  0.000662  0.999338
+4795   4795      True  0.000673  0.999327
+1688   1688      True  0.000676  0.999324
+4414   4414      True  0.000677  0.999323
+1567   1567      True  0.000679  0.999321
+4918   4918      True  0.000684  0.999316
+3769   3769      True  0.000687  0.999313
+1119   1119      True  0.000691  0.999309
+404     404      True  0.000691  0.999309
+5233   5233      True  0.000693  0.999307
+3573   3573      True  0.000698  0.999302
+1425   1425      True  0.000701  0.999299
+2364   2364      True  0.000702  0.999298
+3987   3987      True  0.000703  0.999297
+1084   1084      True  0.000704  0.999296
+3042   3042      True  0.000708  0.999292
+Uncertain 0:
+       index  matching    score0    score1
+4322   4322      True  0.890834  0.109166
+1645   1645      True  0.889723  0.110277
+80       80     False  0.883082  0.116918
+2095   2095     False  0.882949  0.117051
+3619   3619     False  0.868650  0.131350
+4347   4347     False  0.851751  0.148249
+1653   1653     False  0.841478  0.158522
+1186   1186      True  0.834137  0.165863
+4722   4722      True  0.825746  0.174254
+3138   3138      True  0.795523  0.204477
+3065   3065     False  0.743620  0.256380
+527     527      True  0.687378  0.312622
+1893   1893     False  0.680489  0.319511
+2446   2446      True  0.664436  0.335564
+4709   4709     False  0.659553  0.340447
+3106   3106     False  0.619540  0.380460
+4097   4097      True  0.615735  0.384265
+5416   5416     False  0.555871  0.444129
+108     108     False  0.552561  0.447439
+4168   4168     False  0.508839  0.491161
+Uncertain 1:
+       index  matching    score0    score1
+5174   5174      True  0.092229  0.907771
+3315   3315     False  0.093095  0.906905
+818     818     False  0.155868  0.844132
+5702   5702      True  0.157627  0.842373
+1986   1986      True  0.164595  0.835405
+3566   3566     False  0.165998  0.834002
+2561   2561     False  0.175339  0.824661
+1676   1676      True  0.192106  0.807894
+2581   2581      True  0.200898  0.799102
+2994   2994     False  0.220902  0.779098
+1553   1553     False  0.227945  0.772055
+2856   2856     False  0.280473  0.719527
+1898   1898      True  0.288474  0.711526
+56       56      True  0.289446  0.710554
+3492   3492      True  0.342065  0.657935
+2029   2029      True  0.377995  0.622005
+3108   3108     False  0.413628  0.586372
+4574   4574     False  0.439891  0.560109
+1987   1987      True  0.470086  0.529914
+3511   3511      True  0.475613  0.524387
+Unconfident samples positive rate: 0.475
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.3926470588235294
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.11738517880439758, 'test_f1': 0.8962025316455696, 'test_prec': 0.9365079365079365, 'test_recall': 0.8592233009708737, 'labeled_instances': 680, 'orakle_instances': 440, 'train_positive_rate': 0.3926470588235294, 'pool_positive_rate': 0.06893146355915465, 'iteration_time': 471.91172671318054}
+
+### Run 6, 680 training samples. Pool: 5063. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 29% |
+Predictions computed! Length: 5063 Time used:  29.100756883621216
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.936 0.001 0.001 0.001 0.001 0.001 0.001 0.001 0.002 0.056]
+% predicted as match: 0.06004345249851867. 0,1: 4759 304
+High confidence 0:
+       index  matching    score0    score1
+4742   4742     False  0.999645  0.000355
+3929   3929     False  0.999645  0.000355
+2185   2185     False  0.999645  0.000355
+2491   2491     False  0.999644  0.000357
+3525   3525     False  0.999642  0.000358
+5257   5257     False  0.999642  0.000358
+2768   2768     False  0.999640  0.000360
+117     117     False  0.999640  0.000360
+121     121     False  0.999639  0.000361
+5135   5135     False  0.999638  0.000362
+3963   3963     False  0.999638  0.000362
+3399   3399     False  0.999637  0.000363
+5481   5481     False  0.999636  0.000364
+1311   1311     False  0.999636  0.000364
+1298   1298     False  0.999636  0.000364
+260     260     False  0.999636  0.000364
+1537   1537     False  0.999636  0.000364
+4289   4289     False  0.999636  0.000364
+4512   4512     False  0.999636  0.000364
+5110   5110     False  0.999635  0.000365
+High confidence 1:
+       index  matching    score0    score1
+2840   2840      True  0.000714  0.999286
+5203   5203      True  0.000732  0.999268
+3744   3744      True  0.000732  0.999268
+4690   4690      True  0.000736  0.999264
+4502   4502      True  0.000738  0.999262
+2096   2096      True  0.000738  0.999262
+2434   2434      True  0.000740  0.999260
+3174   3174      True  0.000741  0.999259
+1430   1430      True  0.000745  0.999255
+4768   4768      True  0.000746  0.999254
+1036   1036      True  0.000753  0.999247
+1143   1143      True  0.000755  0.999245
+2195   2195      True  0.000757  0.999243
+4481   4481      True  0.000759  0.999241
+1559   1559      True  0.000759  0.999241
+5128   5128      True  0.000759  0.999241
+4654   4654      True  0.000763  0.999237
+2166   2166      True  0.000764  0.999236
+5145   5145      True  0.000764  0.999236
+3662   3662      True  0.000767  0.999233
+Uncertain 0:
+       index  matching    score0    score1
+1513   1513      True  0.885708  0.114292
+3186   3186     False  0.880755  0.119245
+2267   2267     False  0.874500  0.125500
+4306   4306     False  0.839165  0.160835
+3472   3472     False  0.826901  0.173099
+3897   3897     False  0.811703  0.188297
+1075   1075     False  0.781737  0.218263
+403     403     False  0.779719  0.220281
+206     206     False  0.747953  0.252047
+691     691     False  0.741209  0.258791
+685     685      True  0.738748  0.261252
+4775   4775     False  0.716923  0.283078
+2352   2352      True  0.714347  0.285653
+2544   2544     False  0.699670  0.300330
+5608   5608     False  0.649586  0.350414
+5602   5602     False  0.602219  0.397781
+2540   2540      True  0.550337  0.449663
+4368   4368     False  0.547913  0.452087
+3974   3974     False  0.537013  0.462987
+1429   1429      True  0.516085  0.483915
+Uncertain 1:
+       index  matching    score0    score1
+448     448     False  0.090271  0.909729
+5427   5427      True  0.103607  0.896393
+2720   2720     False  0.122361  0.877639
+413     413      True  0.124517  0.875483
+3279   3279      True  0.132887  0.867113
+2998   2998      True  0.153334  0.846666
+2392   2392      True  0.156291  0.843709
+3801   3801     False  0.172685  0.827315
+2568   2568      True  0.189866  0.810134
+4888   4888      True  0.213504  0.786496
+90       90     False  0.218440  0.781560
+1625   1625     False  0.223695  0.776305
+4844   4844     False  0.278063  0.721937
+4633   4633     False  0.342013  0.657987
+4519   4519     False  0.377338  0.622662
+425     425      True  0.382357  0.617643
+1581   1581      True  0.385588  0.614412
+1719   1719      True  0.419357  0.580643
+4746   4746     False  0.463056  0.536944
+950     950     False  0.494624  0.505376
+Unconfident samples positive rate: 0.375
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.3973684210526316
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.1416688710451126, 'test_f1': 0.8615384615384616, 'test_prec': 0.9130434782608695, 'test_recall': 0.8155339805825242, 'labeled_instances': 760, 'orakle_instances': 480, 'train_positive_rate': 0.3973684210526316, 'pool_positive_rate': 0.06301424844471203, 'iteration_time': 476.54807305336}
+
+### Run 7, 760 training samples. Pool: 4983. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4983 Time used:  28.401806592941284
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.943 0.002 0.001 0.001 0.    0.    0.001 0.    0.    0.051]
+% predicted as match: 0.052378085490668275. 0,1: 4722 261
+High confidence 0:
+       index  matching    score0    score1
+432     432     False  0.999721  0.000279
+498     498     False  0.999719  0.000281
+3177   3177     False  0.999719  0.000281
+1514   1514     False  0.999718  0.000282
+2872   2872     False  0.999714  0.000286
+4204   4204     False  0.999712  0.000288
+5705   5705     False  0.999712  0.000288
+5731   5731     False  0.999711  0.000289
+610     610     False  0.999710  0.000290
+4024   4024     False  0.999709  0.000291
+3061   3061     False  0.999709  0.000291
+4249   4249     False  0.999706  0.000294
+4563   4563     False  0.999706  0.000294
+888     888     False  0.999705  0.000295
+3848   3848     False  0.999705  0.000295
+1922   1922     False  0.999704  0.000296
+840     840     False  0.999704  0.000296
+5005   5005     False  0.999703  0.000297
+3868   3868     False  0.999703  0.000297
+3318   3318     False  0.999703  0.000297
+High confidence 1:
+       index  matching    score0    score1
+2573   2573      True  0.000356  0.999644
+430     430      True  0.000368  0.999632
+3697   3697      True  0.000381  0.999619
+2507   2507      True  0.000385  0.999615
+2596   2596      True  0.000389  0.999611
+348     348      True  0.000389  0.999611
+1860   1860      True  0.000391  0.999609
+2179   2179      True  0.000392  0.999608
+2244   2244      True  0.000393  0.999607
+4398   4398      True  0.000395  0.999605
+2362   2362      True  0.000395  0.999605
+1268   1268      True  0.000397  0.999603
+4435   4435      True  0.000397  0.999603
+2391   2391      True  0.000398  0.999602
+5080   5080      True  0.000398  0.999602
+2390   2390      True  0.000398  0.999602
+139     139      True  0.000400  0.999600
+2319   2319      True  0.000402  0.999598
+2951   2951      True  0.000403  0.999597
+576     576      True  0.000404  0.999596
+Uncertain 0:
+       index  matching    score0    score1
+459     459      True  0.899220  0.100780
+3376   3376     False  0.875660  0.124340
+1919   1919     False  0.868142  0.131858
+5474   5474     False  0.868141  0.131859
+5560   5560      True  0.866495  0.133505
+911     911     False  0.865429  0.134571
+491     491      True  0.859230  0.140770
+1087   1087      True  0.837817  0.162183
+2600   2600     False  0.834978  0.165022
+2736   2736      True  0.820832  0.179168
+718     718      True  0.788759  0.211241
+2970   2970      True  0.788072  0.211929
+2959   2959     False  0.744668  0.255332
+266     266      True  0.730306  0.269694
+4620   4620     False  0.656949  0.343051
+3655   3655      True  0.635096  0.364904
+4449   4449     False  0.614985  0.385015
+45       45     False  0.605345  0.394655
+3176   3176      True  0.581152  0.418848
+5710   5710     False  0.570975  0.429025
+Uncertain 1:
+       index  matching    score0    score1
+5711   5711      True  0.007190  0.992810
+2008   2008      True  0.007899  0.992101
+2664   2664      True  0.010453  0.989547
+1931   1931      True  0.013801  0.986199
+2122   2122      True  0.014652  0.985348
+3049   3049      True  0.017897  0.982103
+2541   2541     False  0.018770  0.981230
+3216   3216      True  0.020319  0.979681
+3259   3259     False  0.065576  0.934424
+2411   2411     False  0.075203  0.924797
+3296   3296     False  0.097431  0.902569
+2289   2289     False  0.112237  0.887763
+4964   4964     False  0.135589  0.864411
+1106   1106      True  0.269041  0.730959
+630     630      True  0.308112  0.691888
+1895   1895     False  0.356388  0.643612
+5735   5735      True  0.384142  0.615858
+983     983      True  0.386253  0.613747
+4351   4351     False  0.470748  0.529252
+5685   5685      True  0.484142  0.515858
+Unconfident samples positive rate: 0.55
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4095238095238095
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.1264558881521225, 'test_f1': 0.8844221105527638, 'test_prec': 0.9166666666666666, 'test_recall': 0.8543689320388349, 'labeled_instances': 840, 'orakle_instances': 520, 'train_positive_rate': 0.4095238095238095, 'pool_positive_rate': 0.055476239037324085, 'iteration_time': 482.87425899505615}
+
+### Run 8, 840 training samples. Pool: 4903. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4903 Time used:  27.0635986328125
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.95  0.002 0.001 0.001 0.    0.001 0.    0.    0.    0.045]
+% predicted as match: 0.04650214154599225. 0,1: 4675 228
+High confidence 0:
+       index  matching    score0    score1
+4288   4288     False  0.999782  0.000218
+2460   2460     False  0.999777  0.000223
+2778   2778     False  0.999777  0.000223
+247     247     False  0.999775  0.000225
+4355   4355     False  0.999775  0.000225
+3742   3742     False  0.999775  0.000225
+2422   2422     False  0.999775  0.000225
+2846   2846     False  0.999774  0.000226
+2812   2812     False  0.999774  0.000226
+93       93     False  0.999774  0.000226
+2652   2652     False  0.999774  0.000226
+752     752     False  0.999774  0.000226
+2168   2168     False  0.999774  0.000227
+4919   4919     False  0.999773  0.000227
+382     382     False  0.999773  0.000227
+2339   2339     False  0.999772  0.000228
+2735   2735     False  0.999772  0.000228
+4166   4166     False  0.999771  0.000229
+5018   5018     False  0.999771  0.000229
+3913   3913     False  0.999771  0.000229
+High confidence 1:
+       index  matching    score0    score1
+510     510      True  0.000682  0.999318
+5433   5433      True  0.000700  0.999300
+5330   5330      True  0.000704  0.999296
+1310   1310      True  0.000705  0.999295
+3115   3115      True  0.000706  0.999294
+3400   3400      True  0.000707  0.999293
+3211   3211      True  0.000708  0.999292
+5587   5587      True  0.000709  0.999291
+2114   2114      True  0.000710  0.999290
+1221   1221      True  0.000710  0.999290
+3451   3451      True  0.000712  0.999288
+5098   5098      True  0.000713  0.999287
+1510   1510      True  0.000713  0.999287
+1128   1128      True  0.000714  0.999286
+5299   5299      True  0.000714  0.999286
+287     287      True  0.000715  0.999285
+730     730      True  0.000715  0.999285
+1282   1282      True  0.000715  0.999285
+3853   3853      True  0.000718  0.999282
+539     539      True  0.000719  0.999281
+Uncertain 0:
+       index  matching    score0    score1
+3998   3998     False  0.906300  0.093700
+3577   3577     False  0.879704  0.120296
+1250   1250     False  0.874527  0.125473
+343     343     False  0.869974  0.130026
+4785   4785      True  0.864446  0.135554
+1515   1515     False  0.844958  0.155042
+4489   4489     False  0.842279  0.157721
+4679   4679     False  0.812850  0.187150
+361     361      True  0.812435  0.187565
+2668   2668     False  0.779157  0.220843
+4601   4601      True  0.767145  0.232855
+1145   1145     False  0.743370  0.256630
+740     740     False  0.723831  0.276169
+5312   5312     False  0.721507  0.278493
+4897   4897     False  0.675359  0.324641
+4282   4282      True  0.640332  0.359668
+2321   2321     False  0.621151  0.378849
+910     910     False  0.616827  0.383173
+4914   4914     False  0.614787  0.385213
+3624   3624      True  0.604825  0.395175
+Uncertain 1:
+       index  matching    score0    score1
+3796   3796      True  0.004568  0.995432
+744     744      True  0.005784  0.994216
+4342   4342      True  0.006111  0.993889
+2007   2007      True  0.007239  0.992761
+4900   4900     False  0.007452  0.992548
+5634   5634      True  0.008222  0.991778
+3653   3653      True  0.011082  0.988918
+5372   5372     False  0.014829  0.985171
+475     475     False  0.016469  0.983531
+4716   4716      True  0.017490  0.982510
+3109   3109     False  0.020182  0.979818
+2252   2252     False  0.020994  0.979006
+1950   1950      True  0.034192  0.965808
+5440   5440     False  0.075152  0.924848
+1450   1450      True  0.099154  0.900846
+3978   3978      True  0.242546  0.757454
+5021   5021      True  0.265252  0.734748
+1097   1097     False  0.436078  0.563922
+4182   4182      True  0.462773  0.537227
+2989   2989     False  0.476115  0.523885
+Unconfident samples positive rate: 0.425
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.4141304347826087
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10055456310510635, 'test_f1': 0.8866498740554156, 'test_prec': 0.9214659685863874, 'test_recall': 0.8543689320388349, 'labeled_instances': 920, 'orakle_instances': 560, 'train_positive_rate': 0.4141304347826087, 'pool_positive_rate': 0.048724860045614764, 'iteration_time': 499.82586431503296}
+
+### Run 9, 920 training samples. Pool: 4823. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 29% |
+Predictions computed! Length: 4823 Time used:  24.593502283096313
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.958 0.001 0.001 0.    0.    0.    0.    0.    0.001 0.038]
+% predicted as match: 0.03939456769645449. 0,1: 4633 190
+High confidence 0:
+       index  matching    score0    score1
+4648   4648     False  0.999421  0.000579
+3204   3204     False  0.999420  0.000580
+1159   1159     False  0.999415  0.000585
+2551   2551     False  0.999414  0.000586
+1855   1855     False  0.999412  0.000588
+3620   3620     False  0.999412  0.000588
+1247   1247     False  0.999410  0.000590
+4423   4423     False  0.999410  0.000590
+4917   4917     False  0.999410  0.000590
+5220   5220     False  0.999409  0.000591
+2602   2602     False  0.999408  0.000592
+479     479     False  0.999407  0.000593
+5025   5025     False  0.999407  0.000593
+4500   4500     False  0.999406  0.000594
+4459   4459     False  0.999405  0.000595
+4196   4196     False  0.999405  0.000595
+4246   4246     False  0.999405  0.000595
+4235   4235     False  0.999404  0.000596
+2964   2964     False  0.999403  0.000597
+3982   3982     False  0.999403  0.000597
+High confidence 1:
+       index  matching    score0    score1
+136     136      True  0.001086  0.998914
+5311   5311      True  0.001108  0.998892
+1212   1212      True  0.001109  0.998891
+4354   4354      True  0.001109  0.998891
+1842   1842      True  0.001112  0.998888
+2556   2556      True  0.001113  0.998887
+3766   3766      True  0.001116  0.998884
+785     785      True  0.001117  0.998883
+5579   5579      True  0.001117  0.998883
+5443   5443      True  0.001117  0.998883
+757     757      True  0.001123  0.998877
+370     370      True  0.001124  0.998876
+5383   5383      True  0.001126  0.998874
+3298   3298      True  0.001127  0.998873
+4303   4303      True  0.001127  0.998873
+5517   5517      True  0.001128  0.998872
+965     965      True  0.001131  0.998869
+4146   4146      True  0.001139  0.998861
+483     483      True  0.001139  0.998861
+5358   5358      True  0.001139  0.998861
+Uncertain 0:
+       index  matching    score0    score1
+1511   1511     False  0.954631  0.045369
+2350   2350     False  0.954478  0.045522
+2634   2634     False  0.950409  0.049591
+3806   3806      True  0.943591  0.056409
+4950   4950     False  0.936270  0.063730
+1690   1690     False  0.934952  0.065048
+4728   4728     False  0.917425  0.082575
+2438   2438     False  0.915330  0.084670
+5122   5122     False  0.905109  0.094891
+1822   1822      True  0.894477  0.105523
+4039   4039     False  0.871680  0.128320
+1933   1933     False  0.866165  0.133835
+1635   1635      True  0.858467  0.141533
+2991   2991      True  0.841773  0.158227
+1660   1660      True  0.838025  0.161975
+2125   2125      True  0.773574  0.226426
+1416   1416     False  0.772725  0.227275
+5638   5638     False  0.771026  0.228974
+132     132     False  0.753404  0.246596
+228     228     False  0.720725  0.279275
+Uncertain 1:
+       index  matching    score0    score1
+3686   3686      True  0.012202  0.987798
+5146   5146     False  0.012734  0.987266
+665     665      True  0.018375  0.981625
+1443   1443      True  0.018671  0.981329
+2676   2676      True  0.019620  0.980380
+893     893      True  0.020012  0.979988
+2117   2117      True  0.023419  0.976581
+4498   4498      True  0.030677  0.969323
+2004   2004     False  0.032938  0.967062
+3835   3835      True  0.045408  0.954592
+1476   1476      True  0.060307  0.939693
+3625   3625      True  0.080457  0.919543
+4830   4830      True  0.082667  0.917333
+5438   5438      True  0.090822  0.909178
+4960   4960      True  0.104133  0.895867
+339     339     False  0.115468  0.884532
+3125   3125      True  0.164510  0.835490
+1620   1620     False  0.192139  0.807861
+5328   5328     False  0.393993  0.606007
+2000   2000      True  0.417958  0.582042
+Unconfident samples positive rate: 0.525
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.422
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.093938447535038, 'test_f1': 0.913151364764268, 'test_prec': 0.934010152284264, 'test_recall': 0.8932038834951457, 'labeled_instances': 1000, 'orakle_instances': 600, 'train_positive_rate': 0.422, 'pool_positive_rate': 0.040902382458359685, 'iteration_time': 508.5700640678406}
+
+### Run 10, 1000 training samples. Pool: 4743. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4743 Time used:  28.319366455078125
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.966 0.001 0.    0.    0.    0.    0.    0.    0.    0.032]
+% predicted as match: 0.03289057558507274. 0,1: 4587 156
+High confidence 0:
+       index  matching    score0    score1
+4300   4300     False  0.999767  0.000233
+5305   5305     False  0.999767  0.000233
+2251   2251     False  0.999763  0.000237
+4592   4592     False  0.999763  0.000237
+1595   1595     False  0.999761  0.000239
+1648   1648     False  0.999761  0.000239
+4473   4473     False  0.999761  0.000239
+4017   4017     False  0.999761  0.000239
+5599   5599     False  0.999760  0.000240
+5164   5164     False  0.999759  0.000241
+3502   3502     False  0.999759  0.000241
+1774   1774     False  0.999759  0.000241
+1413   1413     False  0.999759  0.000241
+1796   1796     False  0.999758  0.000242
+3353   3353     False  0.999758  0.000242
+521     521     False  0.999757  0.000243
+5706   5706     False  0.999757  0.000243
+5507   5507     False  0.999757  0.000243
+5261   5261     False  0.999757  0.000243
+1627   1627     False  0.999757  0.000243
+High confidence 1:
+       index  matching    score0    score1
+5564   5564      True  0.000564  0.999436
+2620   2620      True  0.000572  0.999428
+3940   3940      True  0.000572  0.999428
+1326   1326      True  0.000576  0.999424
+2075   2075      True  0.000577  0.999423
+4333   4333      True  0.000585  0.999415
+2033   2033      True  0.000587  0.999413
+3871   3871      True  0.000588  0.999412
+5495   5495      True  0.000589  0.999411
+2019   2019      True  0.000589  0.999411
+2655   2655      True  0.000591  0.999409
+4186   4186      True  0.000591  0.999409
+5252   5252      True  0.000595  0.999405
+3529   3529      True  0.000597  0.999403
+2335   2335      True  0.000597  0.999403
+4309   4309      True  0.000598  0.999402
+5347   5347      True  0.000600  0.999400
+1542   1542      True  0.000602  0.999398
+596     596      True  0.000611  0.999389
+611     611      True  0.000612  0.999388
+Uncertain 0:
+       index  matching    score0    score1
+2571   2571     False  0.980706  0.019294
+5488   5488     False  0.980078  0.019922
+2891   2891     False  0.979410  0.020590
+5258   5258     False  0.979385  0.020615
+2060   2060     False  0.975233  0.024767
+5646   5646     False  0.973474  0.026526
+5371   5371     False  0.972509  0.027491
+2164   2164     False  0.968618  0.031382
+3150   3150     False  0.964222  0.035778
+1853   1853     False  0.950000  0.050000
+4695   4695     False  0.937290  0.062710
+3425   3425     False  0.925589  0.074411
+1435   1435     False  0.917629  0.082371
+2337   2337     False  0.914031  0.085969
+3018   3018     False  0.885340  0.114660
+62       62     False  0.869855  0.130145
+1535   1535     False  0.855919  0.144081
+3198   3198     False  0.850950  0.149050
+258     258     False  0.826024  0.173976
+5302   5302      True  0.661596  0.338404
+Uncertain 1:
+       index  matching    score0    score1
+3536   3536      True  0.001421  0.998579
+2187   2187      True  0.001439  0.998561
+3498   3498      True  0.001567  0.998433
+433     433      True  0.001573  0.998427
+3235   3235     False  0.002031  0.997969
+4327   4327      True  0.002236  0.997764
+3837   3837     False  0.002263  0.997737
+5558   5558      True  0.002307  0.997693
+4517   4517      True  0.002693  0.997307
+5282   5282      True  0.004155  0.995845
+4230   4230      True  0.005024  0.994976
+5068   5068      True  0.006646  0.993354
+1003   1003      True  0.025182  0.974818
+2977   2977      True  0.027689  0.972311
+790     790     False  0.034291  0.965709
+5654   5654     False  0.051756  0.948244
+2177   2177      True  0.093270  0.906730
+635     635      True  0.134211  0.865789
+3994   3994     False  0.154341  0.845659
+5385   5385      True  0.461393  0.538607
+Unconfident samples positive rate: 0.4
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.42407407407407405
+Fitting module..
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10898973047733307, 'test_f1': 0.8923076923076922, 'test_prec': 0.9456521739130435, 'test_recall': 0.8446601941747572, 'labeled_instances': 1080, 'orakle_instances': 640, 'train_positive_rate': 0.42407407407407405, 'pool_positive_rate': 0.033883765815998286, 'iteration_time': 486.2018666267395}
+
+### Run 11, 1080 training samples. Pool: 4663. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4663 Time used:  26.001692533493042
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.974 0.    0.    0.    0.    0.    0.    0.    0.    0.025]
+% predicted as match: 0.025520051469011366. 0,1: 4544 119
+High confidence 0:
+       index  matching    score0    score1
+3996   3996     False  0.999801  0.000199
+3534   3534     False  0.999799  0.000201
+5541   5541     False  0.999799  0.000201
+3603   3603     False  0.999798  0.000202
+1096   1096     False  0.999798  0.000203
+2700   2700     False  0.999797  0.000203
+768     768     False  0.999797  0.000203
+5666   5666     False  0.999797  0.000203
+2061   2061     False  0.999797  0.000203
+4657   4657     False  0.999797  0.000203
+1215   1215     False  0.999797  0.000203
+1004   1004     False  0.999797  0.000203
+4779   4779     False  0.999797  0.000203
+4332   4332     False  0.999797  0.000203
+1400   1400     False  0.999797  0.000203
+458     458     False  0.999797  0.000203
+1471   1471     False  0.999797  0.000203
+873     873     False  0.999796  0.000204
+2875   2875     False  0.999796  0.000204
+4325   4325     False  0.999796  0.000204
+High confidence 1:
+       index  matching    score0    score1
+4758   4758      True  0.000401  0.999599
+2831   2831      True  0.000411  0.999589
+5589   5589      True  0.000422  0.999578
+3724   3724      True  0.000423  0.999577
+4801   4801      True  0.000424  0.999576
+1309   1309      True  0.000429  0.999571
+2160   2160      True  0.000432  0.999568
+5109   5109      True  0.000435  0.999565
+267     267      True  0.000439  0.999561
+5572   5572      True  0.000439  0.999561
+4598   4598      True  0.000439  0.999561
+3773   3773      True  0.000439  0.999561
+1781   1781      True  0.000444  0.999556
+154     154      True  0.000445  0.999555
+2717   2717      True  0.000445  0.999555
+5231   5231      True  0.000446  0.999554
+303     303      True  0.000447  0.999553
+4396   4396      True  0.000448  0.999552
+1009   1009      True  0.000451  0.999549
+335     335      True  0.000452  0.999548
+Uncertain 0:
+       index  matching    score0    score1
+3103   3103     False  0.998358  0.001642
+4439   4439     False  0.998309  0.001691
+1386   1386     False  0.998279  0.001721
+4205   4205     False  0.998238  0.001762
+861     861     False  0.997988  0.002012
+1936   1936     False  0.997948  0.002052
+5571   5571     False  0.997948  0.002052
+5152   5152     False  0.997508  0.002492
+2598   2598     False  0.997498  0.002502
+3254   3254     False  0.997382  0.002618
+3844   3844      True  0.996606  0.003394
+3490   3490     False  0.996323  0.003677
+3334   3334     False  0.993781  0.006219
+1591   1591      True  0.993668  0.006332
+4074   4074     False  0.993609  0.006391
+4032   4032      True  0.992443  0.007557
+3327   3327     False  0.985015  0.014985
+1671   1671      True  0.984104  0.015896
+1100   1100     False  0.940611  0.059389
+777     777      True  0.861192  0.138808
+Uncertain 1:
+       index  matching    score0    score1
+3164   3164      True  0.001064  0.998936
+5389   5389      True  0.001089  0.998911
+120     120     False  0.001177  0.998823
+1480   1480      True  0.001178  0.998822
+3941   3941      True  0.001336  0.998664
+92       92      True  0.001365  0.998635
+4870   4870      True  0.001477  0.998523
+5169   5169      True  0.001811  0.998189
+1440   1440      True  0.002316  0.997684
+4058   4058      True  0.002978  0.997022
+646     646      True  0.003660  0.996340
+3048   3048      True  0.004388  0.995612
+2258   2258      True  0.004578  0.995422
+821     821      True  0.006342  0.993658
+3047   3047      True  0.007925  0.992075
+2340   2340      True  0.013299  0.986701
+4340   4340      True  0.019015  0.980985
+5470   5470     False  0.020438  0.979562
+5384   5384      True  0.042812  0.957188
+4270   4270     False  0.101102  0.898898
+Unconfident samples positive rate: 0.55
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.43103448275862066
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.11151865124702454, 'test_f1': 0.8997429305912596, 'test_prec': 0.9562841530054644, 'test_recall': 0.8495145631067961, 'labeled_instances': 1160, 'orakle_instances': 680, 'train_positive_rate': 0.43103448275862066, 'pool_positive_rate': 0.025310931704123935, 'iteration_time': 501.98320508003235}
+
+### Run 12, 1160 training samples. Pool: 4583. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4583 Time used:  25.139239072799683
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.983 0.    0.    0.    0.    0.    0.    0.    0.    0.017]
+% predicted as match: 0.017455814968361336. 0,1: 4503 80
+High confidence 0:
+       index  matching    score0    score1
+1932   1932     False  0.999842  0.000158
+4305   4305     False  0.999840  0.000160
+4571   4571     False  0.999839  0.000161
+2703   2703     False  0.999839  0.000161
+4117   4117     False  0.999839  0.000161
+1406   1406     False  0.999839  0.000161
+3496   3496     False  0.999839  0.000161
+800     800     False  0.999839  0.000161
+283     283     False  0.999838  0.000162
+4335   4335     False  0.999838  0.000162
+3643   3643     False  0.999838  0.000162
+3168   3168     False  0.999838  0.000162
+302     302     False  0.999838  0.000162
+5300   5300     False  0.999838  0.000162
+1823   1823     False  0.999838  0.000162
+5412   5412     False  0.999837  0.000163
+5106   5106     False  0.999837  0.000163
+2037   2037     False  0.999837  0.000163
+2585   2585     False  0.999837  0.000163
+1887   1887     False  0.999837  0.000163
+High confidence 1:
+       index  matching    score0    score1
+736     736      True  0.000316  0.999684
+3264   3264      True  0.000325  0.999675
+1468   1468      True  0.000327  0.999673
+946     946      True  0.000329  0.999671
+1839   1839      True  0.000331  0.999669
+1478   1478      True  0.000331  0.999669
+2376   2376      True  0.000334  0.999666
+5287   5287      True  0.000337  0.999663
+503     503      True  0.000340  0.999660
+371     371      True  0.000340  0.999660
+4534   4534      True  0.000341  0.999659
+5105   5105      True  0.000345  0.999655
+4636   4636      True  0.000346  0.999654
+5694   5694      True  0.000348  0.999652
+3527   3527      True  0.000349  0.999651
+1482   1482      True  0.000350  0.999650
+863     863      True  0.000351  0.999649
+476     476      True  0.000354  0.999646
+1680   1680      True  0.000354  0.999646
+952     952      True  0.000358  0.999642
+Uncertain 0:
+       index  matching    score0    score1
+3449   3449     False  0.999420  0.000580
+3951   3951     False  0.999406  0.000594
+4853   4853     False  0.999374  0.000626
+4979   4979     False  0.999344  0.000656
+4812   4812     False  0.999343  0.000657
+2550   2550      True  0.999209  0.000791
+1905   1905     False  0.999132  0.000868
+332     332     False  0.999129  0.000871
+1538   1538      True  0.998921  0.001079
+1600   1600     False  0.998809  0.001191
+4730   4730     False  0.998602  0.001398
+2619   2619     False  0.998123  0.001877
+1081   1081     False  0.997854  0.002146
+5686   5686     False  0.997770  0.002230
+174     174     False  0.997739  0.002261
+781     781     False  0.996476  0.003524
+1427   1427      True  0.995679  0.004321
+956     956     False  0.993898  0.006102
+4959   4959     False  0.993654  0.006346
+5499   5499     False  0.933499  0.066501
+Uncertain 1:
+       index  matching    score0    score1
+3882   3882      True  0.000500  0.999500
+4872   4872      True  0.000505  0.999495
+2366   2366      True  0.000514  0.999486
+3246   3246      True  0.000533  0.999467
+4826   4826      True  0.000597  0.999403
+1398   1398      True  0.000605  0.999395
+5151   5151      True  0.000696  0.999304
+5645   5645      True  0.000699  0.999301
+2649   2649      True  0.000724  0.999276
+2226   2226      True  0.000724  0.999276
+4486   4486      True  0.000730  0.999270
+4212   4212      True  0.000836  0.999164
+1289   1289      True  0.000850  0.999150
+5215   5215      True  0.001069  0.998931
+4425   4425      True  0.001121  0.998879
+2679   2679      True  0.001598  0.998402
+4252   4252      True  0.001638  0.998362
+3272   3272      True  0.005234  0.994766
+4372   4372      True  0.012692  0.987308
+311     311      True  0.059140  0.940860
+Unconfident samples positive rate: 0.575
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.43790322580645163
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.12195875495672226, 'test_f1': 0.8927680798004987, 'test_prec': 0.9179487179487179, 'test_recall': 0.8689320388349514, 'labeled_instances': 1240, 'orakle_instances': 720, 'train_positive_rate': 0.43790322580645163, 'pool_positive_rate': 0.01621141461248057, 'iteration_time': 498.1741752624512}
+
+### Run 13, 1240 training samples. Pool: 4503. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4503 Time used:  24.62772035598755
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.988 0.001 0.    0.001 0.    0.    0.    0.    0.    0.009]
+% predicted as match: 0.009105041083721963. 0,1: 4462 41
+High confidence 0:
+       index  matching    score0    score1
+2458   2458     False  0.999885  0.000115
+5178   5178     False  0.999885  0.000115
+5331   5331     False  0.999885  0.000115
+916     916     False  0.999885  0.000115
+105     105     False  0.999885  0.000115
+2260   2260     False  0.999884  0.000116
+5181   5181     False  0.999884  0.000116
+467     467     False  0.999884  0.000116
+1617   1617     False  0.999884  0.000116
+423     423     False  0.999884  0.000116
+5269   5269     False  0.999884  0.000116
+2312   2312     False  0.999884  0.000116
+2463   2463     False  0.999884  0.000116
+9         9     False  0.999884  0.000116
+4559   4559     False  0.999884  0.000116
+3919   3919     False  0.999884  0.000116
+2429   2429     False  0.999884  0.000116
+5017   5017     False  0.999884  0.000116
+692     692     False  0.999883  0.000117
+1001   1001     False  0.999883  0.000117
+High confidence 1:
+       index  matching    score0    score1
+1007   1007      True  0.000327  0.999673
+3285   3285      True  0.000331  0.999669
+2032   2032      True  0.000333  0.999667
+3074   3074      True  0.000334  0.999666
+1605   1605      True  0.000337  0.999663
+791     791      True  0.000341  0.999659
+2401   2401      True  0.000344  0.999656
+3891   3891      True  0.000346  0.999654
+2820   2820      True  0.000349  0.999651
+849     849      True  0.000354  0.999646
+4572   4572      True  0.000354  0.999646
+4639   4639      True  0.000355  0.999645
+1710   1710      True  0.000360  0.999640
+3406   3406      True  0.000365  0.999635
+3086   3086      True  0.000366  0.999634
+1005   1005      True  0.000371  0.999629
+1970   1970      True  0.000372  0.999628
+5397   5397      True  0.000375  0.999625
+632     632      True  0.000380  0.999620
+4250   4250      True  0.000384  0.999616
+Uncertain 0:
+       index  matching    score0    score1
+1137   1137     False  0.993471  0.006529
+1489   1489     False  0.993418  0.006582
+1616   1616     False  0.988720  0.011280
+1048   1048     False  0.987167  0.012833
+4961   4961     False  0.976455  0.023545
+530     530     False  0.976454  0.023546
+3903   3903      True  0.957204  0.042796
+2272   2272     False  0.948614  0.051386
+1180   1180     False  0.929669  0.070331
+3214   3214     False  0.894014  0.105986
+3446   3446     False  0.894010  0.105990
+4696   4696     False  0.894010  0.105990
+2473   2473      True  0.894010  0.105990
+1337   1337      True  0.865038  0.134962
+1176   1176     False  0.823045  0.176955
+4418   4418     False  0.773012  0.226988
+3404   3404     False  0.773012  0.226988
+2196   2196      True  0.671121  0.328879
+2752   2752     False  0.671120  0.328880
+202     202     False  0.664842  0.335158
+Uncertain 1:
+       index  matching    score0    score1
+1847   1847      True  0.000390  0.999610
+856     856      True  0.000392  0.999608
+5613   5613      True  0.000395  0.999605
+1236   1236      True  0.000406  0.999594
+2764   2764      True  0.000410  0.999590
+4923   4923      True  0.000444  0.999556
+4436   4436      True  0.000445  0.999555
+2372   2372      True  0.000448  0.999552
+3612   3612      True  0.000498  0.999502
+4774   4774      True  0.000514  0.999486
+2317   2317      True  0.000530  0.999470
+4251   4251      True  0.000540  0.999460
+143     143      True  0.000558  0.999442
+4013   4013      True  0.000583  0.999417
+1580   1580      True  0.000637  0.999363
+1795   1795      True  0.000698  0.999302
+2897   2897      True  0.000709  0.999291
+1586   1586      True  0.000976  0.999024
+290     290      True  0.001140  0.998860
+5408   5408     False  0.428836  0.571164
+Unconfident samples positive rate: 0.575
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 1.0
+Total train positive rate: 0.44393939393939397
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.09228204935789108, 'test_f1': 0.9095354523227384, 'test_prec': 0.916256157635468, 'test_recall': 0.9029126213592233, 'labeled_instances': 1320, 'orakle_instances': 760, 'train_positive_rate': 0.44393939393939397, 'pool_positive_rate': 0.006782726656115758, 'iteration_time': 507.6795086860657}
+
+### Run 14, 1320 training samples. Pool: 4423. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4423 Time used:  24.237184047698975
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.997 0.    0.001 0.001 0.    0.    0.    0.    0.    0.001]
+% predicted as match: 0.0009043635541487678. 0,1: 4419 4
+High confidence 0:
+       index  matching    score0    score1
+4009   4009     False  0.999812  0.000188
+4320   4320     False  0.999810  0.000190
+4201   4201     False  0.999803  0.000197
+3417   3417     False  0.999802  0.000198
+81       81     False  0.999802  0.000198
+5134   5134     False  0.999801  0.000199
+1766   1766     False  0.999800  0.000200
+1409   1409     False  0.999800  0.000200
+3428   3428     False  0.999800  0.000200
+3808   3808     False  0.999799  0.000201
+1344   1344     False  0.999799  0.000201
+5533   5533     False  0.999798  0.000202
+4344   4344     False  0.999798  0.000202
+3640   3640     False  0.999798  0.000202
+5086   5086     False  0.999797  0.000203
+4081   4081     False  0.999797  0.000203
+4840   4840     False  0.999797  0.000203
+2793   2793     False  0.999797  0.000203
+1546   1546     False  0.999796  0.000204
+1210   1210     False  0.999796  0.000204
+High confidence 1:
+       index  matching    score0    score1
+279     279      True  0.000323  0.999677
+1079   1079     False  0.014611  0.985389
+4318   4318     False  0.017787  0.982213
+2202   2202     False  0.231011  0.768989
+Uncertain 0:
+       index  matching    score0    score1
+3857   3857     False  0.972903  0.027097
+1632   1632      True  0.950724  0.049276
+2363   2363     False  0.948484  0.051516
+5468   5468      True  0.948200  0.051800
+2528   2528     False  0.939626  0.060374
+1789   1789     False  0.933646  0.066354
+1493   1493      True  0.926615  0.073385
+1867   1867     False  0.926503  0.073497
+4689   4689     False  0.926503  0.073497
+1451   1451      True  0.926502  0.073498
+1889   1889     False  0.849565  0.150435
+3411   3411     False  0.749419  0.250581
+3528   3528     False  0.748635  0.251365
+5030   5030     False  0.733598  0.266402
+4224   4224     False  0.721254  0.278746
+1916   1916      True  0.721254  0.278746
+1208   1208     False  0.721254  0.278746
+3333   3333     False  0.665787  0.334213
+2777   2777     False  0.665787  0.334213
+4022   4022     False  0.665786  0.334214
+Uncertain 1:
+       index  matching    score0    score1
+279     279      True  0.000323  0.999677
+1079   1079     False  0.014611  0.985389
+4318   4318     False  0.017787  0.982213
+2202   2202     False  0.231011  0.768989
+!!! Found less than max query_instances!!! 48
+Unconfident samples positive rate: 0.25
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.25
+Total train positive rate: 0.4334795321637427
+Fitting module..
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.09559813141822815, 'test_f1': 0.9040404040404041, 'test_prec': 0.9421052631578948, 'test_recall': 0.8689320388349514, 'labeled_instances': 1368, 'orakle_instances': 784, 'train_positive_rate': 0.4334795321637427, 'pool_positive_rate': 0.005480703356930806, 'iteration_time': 520.5762810707092}
+
+### Run 15, 1368 training samples. Pool: 4379. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+Predictions computed! Length: 4379 Time used:  28.95167565345764
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.992 0.003 0.003 0.    0.001 0.    0.    0.    0.    0.001]
+% predicted as match: 0.0011418131993605847. 0,1: 4374 5
+High confidence 0:
+       index  matching    score0    score1
+2865   2865     False  0.999852  0.000148
+4280   4280     False  0.999846  0.000154
+2535   2535     False  0.999846  0.000154
+3876   3876     False  0.999845  0.000155
+5342   5342     False  0.999845  0.000155
+5325   5325     False  0.999845  0.000155
+514     514     False  0.999844  0.000156
+2849   2849     False  0.999844  0.000156
+57       57     False  0.999843  0.000157
+4560   4560     False  0.999843  0.000157
+4705   4705     False  0.999843  0.000157
+5123   5123     False  0.999843  0.000157
+3173   3173     False  0.999843  0.000157
+4683   4683     False  0.999843  0.000157
+3939   3939     False  0.999843  0.000157
+3604   3604     False  0.999843  0.000157
+2967   2967     False  0.999843  0.000157
+3692   3692     False  0.999843  0.000157
+2300   2300     False  0.999842  0.000158
+2987   2987     False  0.999842  0.000158
+High confidence 1:
+       index  matching    score0    score1
+2993   2993     False  0.003728  0.996272
+5536   5536      True  0.087816  0.912184
+4296   4296     False  0.095729  0.904271
+1937   1937     False  0.293768  0.706232
+2297   2297     False  0.497252  0.502748
+Uncertain 0:
+       index  matching    score0    score1
+3804   3804      True  0.820556  0.179444
+3258   3258     False  0.800673  0.199327
+2155   2155     False  0.800431  0.199569
+4989   4989     False  0.789098  0.210902
+2138   2138      True  0.787689  0.212311
+1981   1981     False  0.787688  0.212311
+629     629     False  0.776110  0.223890
+2323   2323     False  0.768888  0.231112
+5211   5211     False  0.757410  0.242590
+4973   4973     False  0.757409  0.242591
+4925   4925     False  0.757409  0.242591
+3900   3900     False  0.734707  0.265293
+3792   3792     False  0.710375  0.289625
+513     513     False  0.710375  0.289625
+4700   4700     False  0.706730  0.293270
+3628   3628     False  0.649599  0.350401
+962     962     False  0.638782  0.361218
+2625   2625     False  0.557526  0.442474
+3687   3687     False  0.542573  0.457427
+1193   1193     False  0.542573  0.457427
+Uncertain 1:
+       index  matching    score0    score1
+2993   2993     False  0.003728  0.996272
+5536   5536      True  0.087816  0.912184
+4296   4296     False  0.095729  0.904271
+1937   1937     False  0.293768  0.706232
+2297   2297     False  0.497252  0.502748
+!!! Found less than max query_instances!!! 50
+Unconfident samples positive rate: 0.12
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.2
+Total train positive rate: 0.421015514809591
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10403662174940109, 'test_f1': 0.8926829268292683, 'test_prec': 0.8970588235294118, 'test_recall': 0.8883495145631068, 'labeled_instances': 1418, 'orakle_instances': 809, 'train_positive_rate': 0.421015514809591, 'pool_positive_rate': 0.004845408398707891, 'iteration_time': 535.6766242980957}
+
+### Run 16, 1418 training samples. Pool: 4334. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4334 Time used:  23.97633457183838
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[0.997 0.001 0.001 0.    0.    0.    0.    0.    0.    0.   ]
+% predicted as match: 0.0009229349330872173. 0,1: 4330 4
+High confidence 0:
+       index  matching    score0    score1
+5338   5338     False  0.999701  0.000299
+166     166     False  0.999699  0.000301
+897     897     False  0.999696  0.000304
+2878   2878     False  0.999695  0.000305
+1237   1237     False  0.999694  0.000306
+1185   1185     False  0.999694  0.000306
+3373   3373     False  0.999694  0.000306
+4008   4008     False  0.999693  0.000307
+869     869     False  0.999693  0.000307
+4112   4112     False  0.999693  0.000307
+2040   2040     False  0.999693  0.000307
+1808   1808     False  0.999693  0.000307
+2554   2554     False  0.999692  0.000308
+1040   1040     False  0.999692  0.000308
+595     595     False  0.999692  0.000308
+2223   2223     False  0.999691  0.000309
+2299   2299     False  0.999691  0.000309
+4380   4380     False  0.999691  0.000309
+4850   4850     False  0.999690  0.000310
+5316   5316     False  0.999690  0.000310
+High confidence 1:
+       index  matching    score0    score1
+4545   4545     False  0.049904  0.950096
+1811   1811     False  0.079297  0.920703
+5289   5289     False  0.255763  0.744237
+4886   4886     False  0.355108  0.644892
+Uncertain 0:
+       index  matching    score0    score1
+2913   2913     False  0.969237  0.030763
+2034   2034      True  0.968340  0.031660
+5138   5138     False  0.961496  0.038504
+684     684     False  0.955571  0.044429
+567     567     False  0.954619  0.045381
+4984   4984     False  0.950524  0.049476
+3774   3774     False  0.921175  0.078825
+1594   1594      True  0.915541  0.084459
+2552   2552     False  0.906461  0.093539
+829     829      True  0.900647  0.099353
+2053   2053     False  0.892166  0.107834
+4663   4663     False  0.842693  0.157307
+4050   4050     False  0.839010  0.160990
+4644   4644     False  0.829953  0.170047
+3028   3028      True  0.813022  0.186978
+1306   1306     False  0.778261  0.221739
+2984   2984     False  0.761032  0.238968
+1695   1695     False  0.755601  0.244399
+1694   1694     False  0.685102  0.314898
+3213   3213     False  0.641238  0.358762
+Uncertain 1:
+       index  matching    score0    score1
+4545   4545     False  0.049904  0.950096
+1811   1811     False  0.079297  0.920703
+5289   5289     False  0.255763  0.744237
+4886   4886     False  0.355108  0.644892
+!!! Found less than max query_instances!!! 48
+Unconfident samples positive rate: 0.16666666666666666
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.0
+Total train positive rate: 0.4099590723055935
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10609077662229538, 'test_f1': 0.89, 'test_prec': 0.9175257731958762, 'test_recall': 0.8640776699029126, 'labeled_instances': 1466, 'orakle_instances': 833, 'train_positive_rate': 0.4099590723055935, 'pool_positive_rate': 0.003962703962703963, 'iteration_time': 544.2533085346222}
+
+### Run 17, 1466 training samples. Pool: 4290. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 42% |
+Predictions computed! Length: 4290 Time used:  23.64771819114685
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 33% |
+[1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+% predicted as match: 0.0002331002331002331. 0,1: 4289 1
+High confidence 0:
+       index  matching    score0    score1
+681     681     False  0.999812  0.000188
+2134   2134     False  0.999811  0.000189
+59       59     False  0.999808  0.000192
+3794   3794     False  0.999807  0.000193
+2859   2859     False  0.999807  0.000193
+3995   3995     False  0.999806  0.000194
+1662   1662     False  0.999806  0.000194
+5014   5014     False  0.999805  0.000195
+5422   5422     False  0.999803  0.000197
+3227   3227     False  0.999802  0.000198
+4799   4799     False  0.999801  0.000199
+5709   5709     False  0.999801  0.000200
+18       18     False  0.999800  0.000200
+3651   3651     False  0.999800  0.000200
+5651   5651     False  0.999799  0.000201
+4883   4883     False  0.999799  0.000201
+2711   2711     False  0.999799  0.000201
+2973   2973     False  0.999798  0.000202
+2373   2373     False  0.999797  0.000203
+3867   3867     False  0.999797  0.000203
+High confidence 1:
+       index  matching    score0    score1
+4293   4293     False  0.119204  0.880796
+Uncertain 0:
+       index  matching    score0    score1
+4416   4416     False  0.998371  0.001629
+4911   4911     False  0.998358  0.001642
+2662   2662     False  0.998214  0.001786
+4782   4782     False  0.998108  0.001892
+5552   5552     False  0.998103  0.001897
+1327   1327     False  0.998017  0.001983
+2174   2174     False  0.998013  0.001987
+1720   1720     False  0.998013  0.001987
+355     355      True  0.997975  0.002025
+875     875     False  0.997974  0.002026
+2707   2707     False  0.997969  0.002031
+1697   1697     False  0.997885  0.002115
+3674   3674      True  0.997852  0.002148
+4216   4216     False  0.997852  0.002148
+1713   1713     False  0.997784  0.002216
+2505   2505     False  0.995848  0.004152
+889     889     False  0.995282  0.004718
+1475   1475     False  0.993189  0.006811
+4341   4341     False  0.928610  0.071390
+1609   1609     False  0.764184  0.235816
+Uncertain 1:
+       index  matching    score0    score1
+4293   4293     False  0.119204  0.880796
+!!! Found less than max query_instances!!! 42
+Unconfident samples positive rate: 0.09523809523809523
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.0
+Total train positive rate: 0.39986737400530503
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.09346604347229004, 'test_f1': 0.9073170731707318, 'test_prec': 0.9117647058823529, 'test_recall': 0.9029126213592233, 'labeled_instances': 1508, 'orakle_instances': 854, 'train_positive_rate': 0.39986737400530503, 'pool_positive_rate': 0.0035302424099788185, 'iteration_time': 538.8595840930939}
+
+### Run 18, 1508 training samples. Pool: 4249. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 30% |
+Predictions computed! Length: 4249 Time used:  23.749876499176025
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[0.999 0.    0.    0.    0.    0.    0.    0.    0.    0.   ]
+% predicted as match: 0.0002353494939985879. 0,1: 4248 1
+High confidence 0:
+       index  matching    score0    score1
+405     405     False  0.999867  0.000133
+3443   3443     False  0.999865  0.000135
+4507   4507     False  0.999865  0.000135
+1183   1183     False  0.999864  0.000136
+3102   3102     False  0.999863  0.000137
+3431   3431     False  0.999863  0.000137
+599     599     False  0.999863  0.000137
+575     575     False  0.999862  0.000138
+5601   5601     False  0.999862  0.000138
+3255   3255     False  0.999862  0.000138
+5612   5612     False  0.999862  0.000138
+5607   5607     False  0.999862  0.000138
+612     612     False  0.999861  0.000139
+2092   2092     False  0.999861  0.000139
+3594   3594     False  0.999861  0.000139
+2874   2874     False  0.999861  0.000139
+265     265     False  0.999861  0.000139
+1602   1602     False  0.999861  0.000139
+1447   1447     False  0.999861  0.000139
+4409   4409     False  0.999861  0.000139
+High confidence 1:
+       index  matching   score0   score1
+1871   1871     False  0.04529  0.95471
+Uncertain 0:
+       index  matching    score0    score1
+5136   5136     False  0.994122  0.005878
+3740   3740     False  0.993509  0.006491
+2901   2901     False  0.992903  0.007097
+5037   5037     False  0.992346  0.007654
+1052   1052     False  0.991817  0.008183
+2910   2910     False  0.990414  0.009586
+890     890     False  0.989990  0.010010
+4819   4819     False  0.989831  0.010169
+2194   2194     False  0.989636  0.010364
+4040   4040     False  0.989026  0.010974
+2044   2044     False  0.988953  0.011047
+2142   2142     False  0.988620  0.011380
+3143   3143     False  0.985341  0.014659
+1393   1393     False  0.984225  0.015775
+5092   5092     False  0.982728  0.017272
+1285   1285     False  0.980843  0.019157
+4852   4852     False  0.974559  0.025441
+13       13     False  0.941687  0.058313
+2780   2780     False  0.896213  0.103787
+2136   2136     False  0.886432  0.113568
+Uncertain 1:
+       index  matching   score0   score1
+1871   1871     False  0.04529  0.95471
+!!! Found less than max query_instances!!! 42
+Unconfident samples positive rate: 0.0
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: 0.0
+Total train positive rate: 0.38903225806451613
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+script-experiment-6.py:677: RuntimeWarning: invalid value encountered in double_scalars
+  print('Positive confident samples positive rate:', instances_pos_confident.sum().sum()/len(instances_pos_confident))
+GPU available: True, used: True
+TPU available: None, using: 0 TPU cores
+Using native 16bit precision.
+Set SLURM handle signals.
+
+  | Name  | Type   | Params
+---------------------------------
+0 | model | _Model | 124 M 
+---------------------------------
+124 M     Trainable params
+0         Non-trainable params
+124 M     Total params
+498.586   Total estimated model params size (MB)
+{'test_loss': 0.10253220051527023, 'test_f1': 0.8922305764411028, 'test_prec': 0.9222797927461139, 'test_recall': 0.8640776699029126, 'labeled_instances': 1550, 'orakle_instances': 875, 'train_positive_rate': 0.38903225806451613, 'pool_positive_rate': 0.003564638783269962, 'iteration_time': 550.8284111022949}
+
+### Run 19, 1550 training samples. Pool: 4208. Prediciting.. ###
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 29% |
+Predictions computed! Length: 4208 Time used:  23.744378805160522
+| ID | GPU | MEM |
+------------------
+|  0 |  0% | 21% |
+[1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+% predicted as match: 0.0. 0,1: 4208 0
+High confidence 0:
+       index  matching    score0    score1
+2942   2942     False  0.999833  0.000167
+163     163     False  0.999832  0.000168
+2237   2237     False  0.999832  0.000168
+324     324     False  0.999831  0.000169
+2360   2360     False  0.999831  0.000169
+1707   1707     False  0.999831  0.000169
+758     758     False  0.999831  0.000169
+3248   3248     False  0.999831  0.000169
+3439   3439     False  0.999830  0.000170
+5248   5248     False  0.999830  0.000170
+1665   1665     False  0.999830  0.000170
+4856   4856     False  0.999830  0.000170
+3105   3105     False  0.999830  0.000170
+543     543     False  0.999830  0.000170
+2270   2270     False  0.999830  0.000170
+87       87     False  0.999830  0.000170
+5578   5578     False  0.999830  0.000170
+4026   4026     False  0.999830  0.000170
+484     484     False  0.999830  0.000170
+5294   5294     False  0.999830  0.000170
+High confidence 1:
+ Empty DataFrame
+Columns: [index, matching, score0, score1]
+Index: []
+Uncertain 0:
+       index  matching    score0    score1
+23       23     False  0.999175  0.000825
+5027   5027     False  0.999175  0.000825
+2351   2351     False  0.999175  0.000825
+5678   5678     False  0.999139  0.000861
+5100   5100     False  0.999134  0.000866
+845     845     False  0.999043  0.000957
+1076   1076     False  0.999038  0.000962
+1740   1740     False  0.999013  0.000987
+1920   1920     False  0.998881  0.001119
+2647   2647     False  0.998869  0.001131
+3416   3416     False  0.998605  0.001395
+2066   2066      True  0.998604  0.001396
+3832   3832     False  0.998460  0.001540
+3544   3544     False  0.997506  0.002494
+4838   4838     False  0.997163  0.002837
+4627   4627     False  0.977739  0.022261
+857     857     False  0.942293  0.057707
+4678   4678     False  0.909535  0.090465
+4477   4477     False  0.843911  0.156089
+1338   1338     False  0.693296  0.306704
+Uncertain 1:
+ Empty DataFrame
+Columns: [index, matching, score0, score1]
+Index: []
+!!! Found less than max query_instances!!! 40
+Unconfident samples positive rate: 0.05
+Negative confident samples positive rate: 0.0
+Positive confident samples positive rate: nan
+Total train positive rate: 0.379874213836478
+Fitting module..
+Traceback (most recent call last):
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/cluster/apps/eb/software/Python/3.8.6-GCCcore-10.2.0/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Testing...
+{'test_loss': 0.10673574358224869, 'test_f1': 0.8960396039603961, 'test_prec': 0.9141414141414141, 'test_recall': 0.8786407766990292, 'labeled_instances': 1590, 'orakle_instances': 895, 'train_positive_rate': 0.379874213836478, 'pool_positive_rate': 0.0033589251439539347, 'iteration_time': 553.3477256298065}
+Finished! Total time: 10377.59732222557
+Cross validation time:  10390.323320388794
+Could not create dir out, File exists
+End of job!
